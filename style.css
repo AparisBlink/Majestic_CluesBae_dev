@@ -5,7 +5,7 @@
     --MainText: 1.6rem;
     --SecondaryText: 1.4rem;
     --MainLineHeight: 1.6;
-    --colorppal: #923538;
+    --colorppal: #B72841;
 }
 
 /*Definimos estas reglas para que no dependan del font-size: 10px*/
@@ -221,38 +221,21 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     background: #b6ecff
 }
 
+/*-------------------------*/
+/*---- Navbar ----*/
 .navbar-bottom {
-    background: #dbc9c9
+    background: #D1D5DB;
 }
-
 .logo-publisher {
-    display: inline-block;
-    position: absolute;
-    top: 4px;
-    left: 40px;
-    width: 300px;
-    height: 37px;
-    background: url(imagenes/Logo_Magestic_Digital.png) 0 0 no-repeat;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-    background-position: 0
+    display: none;
 }
-
 .edit .logo-publisher {
     display: none
 }
-
-@media only screen and (max-width: 640px) {
-    .logo-publisher {
-        width:40px
-    }
-}
-
 #bottom-navigator li.active,#bottom-navigator li:hover {
     background: #923538
 }
+/*-------------*/
 
 .btn-danger,.btn-danger[disabled] {
     background-color: var(--colorppal)
