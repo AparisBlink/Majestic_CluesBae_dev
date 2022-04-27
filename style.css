@@ -74,7 +74,7 @@ body:not(.isTablet) #indice .units ul li:not(.disabled) a:hover .title {
     border-radius: 0
 }
 
-body.content_type_clase_Majestic2020 {
+body.content_type_clase_Majestic_CluesBae_dev {
     font-size: 1.8rem
 }
 a:active,
@@ -85,15 +85,15 @@ a:hover {
     text-decoration: none
 }
 
-body.content_type_clase_Majestic2020 #actividad .content img {
+body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     padding: 5px
 }
 
-.is_app.content_type_clase_Majestic2020 {
+.is_app.content_type_clase_Majestic_CluesBae_dev {
     padding-top: 0
 }
 
-.content_type_clase_Majestic2020 #actividad {
+.content_type_clase_Majestic_CluesBae_dev #actividad {
     margin-bottom: 0;
     -webkit-transform: none;
     -webkit-transform-style: flat
@@ -103,30 +103,30 @@ body.content_type_clase_Majestic2020 #actividad .content img {
     margin: 20px auto
 }
 
-.content_type_clase_Majestic2020 #actividad .slide-concatenate {
+.content_type_clase_Majestic_CluesBae_dev #actividad .slide-concatenate {
     margin-top: 30px
 }
 
-.content_type_clase_Majestic2020 #actividad .content .header .chapter,.content_type_clase_Majestic2020 #actividad .content .header .title img {
+.content_type_clase_Majestic_CluesBae_dev #actividad .content .header .chapter,.content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title img {
     display: none
 }
 
-.content_type_clase_Majestic2020 #actividad .content .header {
+.content_type_clase_Majestic_CluesBae_dev #actividad .content .header {
     border: none;
     margin-bottom: 0
 }
 
-.content_type_clase_Majestic2020 #actividad .content .header .title {
+.content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title {
     margin: 0 0 20px;
     background: var(--colorppal);
     padding: 20px 97px
 }
 
-.content_type_clase_Majestic2020 #actividad .content .slide-concatenate .header .title {
+.content_type_clase_Majestic_CluesBae_dev #actividad .content .slide-concatenate .header .title {
     display: none
 }
 
-.content_type_clase_Majestic2020 #actividad .content .header .title h3 {
+.content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title h3 {
     position: relative;
     display: block;
     width: 100%;
@@ -138,14 +138,14 @@ body.content_type_clase_Majestic2020 #actividad .content img {
     text-align: left
 }
 
-.content_type_clase_Majestic2020 #actividad .content .header .title h3 span {
+.content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title h3 span {
     float: left;
     font-size: 1.8rem;
     font-weight: 900;
     line-height: 1.1rem
 }
 
-.content_type_clase_Majestic2020 #actividad .slide_content_type_1 .pregunta .texto_curso,.content_type_clase_Majestic2020 #actividad .texto_curso,.html-book {
+.content_type_clase_Majestic_CluesBae_dev #actividad .slide_content_type_1 .pregunta .texto_curso,.content_type_clase_Majestic_CluesBae_dev #actividad .texto_curso,.html-book {
     font-size: 1.8rem
 }
 
@@ -153,7 +153,7 @@ body.content_type_clase_Majestic2020 #actividad .content img {
     margin-bottom: 15px
 }
 
-.content_type_clase_Majestic2020 #actividad .texto_curso li,.content_type_clase_Majestic2020 #actividad .workspace ul li li {
+.content_type_clase_Majestic_CluesBae_dev #actividad .texto_curso li,.content_type_clase_Majestic_CluesBae_dev #actividad .workspace ul li li {
     margin-bottom: 10px
 }
 
@@ -161,17 +161,17 @@ body.content_type_clase_Majestic2020 #actividad .content img {
     padding-top: 0
 }
 
-.content_type_clase_Majestic2020 .slide_main {
+.content_type_clase_Majestic_CluesBae_dev .slide_main {
     padding: 0 97px
 }
 
 @media screen and (max-width: 480px) {
-    .content_type_clase_Majestic2020 .slide_main {
+    .content_type_clase_Majestic_CluesBae_dev .slide_main {
         padding:0 35px
     }
 }
 
-.content_type_clase_Majestic2020 .slide_main .img-input-container,.content_type_clase_Majestic2020 .slide_main input {
+.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container,.content_type_clase_Majestic_CluesBae_dev .slide_main input {
     color: #555;
     background-color: #fff;
     background-image: none;
@@ -191,7 +191,7 @@ body.content_type_clase_Majestic2020 #actividad .content img {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out,-moz-box-shadow .15s ease-in-out
 }
 
-.content_type_clase_Majestic2020 .slide_main .img-input-container:focus,.content_type_clase_Majestic2020 .slide_main input:focus {
+.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container:focus,.content_type_clase_Majestic_CluesBae_dev .slide_main input:focus {
     border-color: #3ac62a;
     outline-width: 0;
     outline-style: none;
@@ -200,28 +200,28 @@ body.content_type_clase_Majestic2020 #actividad .content img {
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(133,200,57,.6)
 }
 
-.content_type_clase_Majestic2020 .slide_main .img-input-container,.content_type_clase_Majestic2020 .slide_main input[disabled],.content_type_clase_Majestic2020 .slide_main input[readonly],fieldset[disabled] .content_type_clase_Majestic2020 .slide_main input {
+.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container,.content_type_clase_Majestic_CluesBae_dev .slide_main input[disabled],.content_type_clase_Majestic_CluesBae_dev .slide_main input[readonly],fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     cursor: not-allowed;
     background-color: #eee;
     opacity: 1
 }
 
-.content_type_clase_Majestic2020 .slide_main .img-input-container input[disabled],.content_type_clase_Majestic2020 .slide_main .img-input-container input[readonly] {
+.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container input[disabled],.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container input[readonly] {
     opacity: 0;
     filter: alpha(opacity=0)
 }
 
-.content_type_clase_Majestic2020 .slide_main .img-input-container.respuesta_ok,.content_type_clase_Majestic2020 .slide_main input.respuesta_ok {
+.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container.respuesta_ok,.content_type_clase_Majestic_CluesBae_dev .slide_main input.respuesta_ok {
     border-color: #57e900;
     background: #d1f3bd
 }
 
-.content_type_clase_Majestic2020 .slide_main .img-input-container.respuesta_ko,.content_type_clase_Majestic2020 .slide_main input.respuesta_ko {
+.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container.respuesta_ko,.content_type_clase_Majestic_CluesBae_dev .slide_main input.respuesta_ko {
     border-color: #ff3626;
     background: #ffa49d
 }
 
-.content_type_clase_Majestic2020 .slide_main .img-input-container.solucion,.content_type_clase_Majestic2020 .slide_main input.solucion {
+.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container.solucion,.content_type_clase_Majestic_CluesBae_dev .slide_main input.solucion {
     border-color: #00bdff;
     background: #b6ecff
 }
@@ -518,7 +518,7 @@ body.content_type_clase_Majestic2020 #actividad .content img {
     z-index: 0
 }
 
-.content_type_clase_Majestic2020 .slide_main .img-input-container,.content_type_clase_Majestic2020 .slide_main input {
+.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container,.content_type_clase_Majestic_CluesBae_dev .slide_main input {
     -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,.075);
     -moz-box-shadow: inset 0 0 0 rgba(0,0,0,.075);
     box-shadow: inset 0 0 0 rgba(0,0,0,.075);
@@ -529,11 +529,11 @@ body.content_type_clase_Majestic2020 #actividad .content img {
     border-radius: 0
 }
 
-.content_type_clase_Majestic2020 .slide_main .fill-text .img-input-container {
+.content_type_clase_Majestic_CluesBae_dev .slide_main .fill-text .img-input-container {
     display: none
 }
 
-.content_type_clase_Majestic2020 .slide_main .img-input-container:focus,.content_type_clase_Majestic2020 .slide_main input:focus {
+.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container:focus,.content_type_clase_Majestic_CluesBae_dev .slide_main input:focus {
     border-color: #dbc9c9;
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(133,200,57,0);
     -moz-box-shadow: 0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(133,200,57,0);
@@ -630,7 +630,7 @@ body:not(.edit) .bck-flipbox-face.back {
     padding: 0
 }
 
-body.content_type_clase_Majestic2020 #actividad .content .fillblanks-draggable-wrapper .response .bck-i-fullscreen,body.content_type_clase_Majestic2020 #actividad .content .fillblanks-draggable .img-input-container.imgFilled img {
+body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-draggable-wrapper .response .bck-i-fullscreen,body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-draggable .img-input-container.imgFilled img {
     width: auto;
     height: 100px!important;
     padding: 0
@@ -695,7 +695,7 @@ body.content_type_clase_Majestic2020 #actividad .content .fillblanks-draggable-w
         min-height: 43px
     }
 
-    .content_type_clase_Majestic2020 #actividad .content .header .title {
+    .content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title {
         padding: 20px
     }
 }
@@ -712,13 +712,13 @@ body.content_type_clase_Majestic2020 #actividad .content .fillblanks-draggable-w
 
 /*Correcciones Header slide*/
 @media (max-width: 767px) {
-    .content_type_clase_Majestic2020 #actividad .content .header .title {
+    .content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title {
         padding: 20px 97px;
     }
 }
 
 @media (max-width: 480px) {
-    .content_type_clase_Majestic2020 #actividad .content .header .title {
+    .content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title {
         padding: 20px 35px;
     }
 }
