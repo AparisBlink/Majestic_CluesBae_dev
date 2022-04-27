@@ -137,7 +137,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     padding:0;
     color: #fff;
     font-family: var(--TitleFont);
-    font-size: calc(var(--MainFont) * 1.44);
+    font-size: calc(var(--MainText) * 1.44);
     font-weight: bold;
     text-align: left
 }
@@ -309,23 +309,23 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 /*-------- Titulos-------------*/
 .bck-title-1 {
     font-family: var(--TitleFont);
-    font-size: calc(var(--TitleFont) * 1.44); /*26px*/
+    font-size: calc(var(--MainText) * 1.44); /*26px*/
 }
 .bck-title-2 {
     font-family: var(--TitleFont);
-    font-size: calc(var(--TitleFont) * 1.33); /*24px*/
+    font-size: calc(var(--MainText) * 1.33); /*24px*/
 }
 .bck-title-3 {
     font-family: var(--TitleFont);
-    font-size: calc(var(--TitleFont) * 1.22); /*22px*/
+    font-size: calc(var(--MainText) * 1.22); /*22px*/
 }
 .bck-title-4 {
-    font-size: calc(var(--TitleFont) * 1.11); /*20px*/
+    font-size: calc(var(--MainText) * 1.11); /*20px*/
 }
 
 /*----------- Estilo de parrafo ---------*/
 p.bck-p-1 {
-    font-size: calc(var(--TitleFont) * 1.11); /*20px*/
+    font-size: calc(var(--MainText) * 1.11); /*20px*/
 }
 
 
