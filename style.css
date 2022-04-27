@@ -18,7 +18,7 @@ html body:not(.edit),
  body.edit .navbar.libro {
     line-height: var(--MainLineHeight);
     font-size: var(--MainText);
-    font-family: var(--MainFontFamily)
+    font-family: var(--MainFont)
 }
 .body_clase #actividad .texto_curso,
  .body_clase #actividad .texto_curso p {
@@ -122,7 +122,9 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title {
     margin: 0 0 20px;
     background: var(--colorppal);
-    padding: 20px 97px
+    width: calc(100% + var(--SlidePadding) * 2);
+    margin-left: calc(-1 * var(--SlidePadding));
+    padding: 20px var(--SlidePadding);
 }
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .slide-concatenate .header .title {
     display: none
@@ -131,19 +133,15 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     position: relative;
     display: block;
     width: 100%;
-    margin: 20px 0 0;
-    padding: 0 0 3px;
+    margin: 0;
+    padding:0;
     color: #fff;
-    font-size: 2.4rem;
-    font-weight: 700;
+    font-family: var(--TitleFont);
+    font-size: calc(var(--MainFont) * 1.44);
+    font-weight: bold;
     text-align: left
 }
-.content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title h3 span {
-    float: left;
-    font-size: 1.8rem;
-    font-weight: 900;
-    line-height: 1.1rem
-}
+
 .content_type_clase_Majestic_CluesBae_dev #actividad .slide_content_type_1 .pregunta .texto_curso,
 .content_type_clase_Majestic_CluesBae_dev #actividad .texto_curso,.html-book {
     font-size: 1.8rem
