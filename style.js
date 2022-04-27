@@ -31,6 +31,10 @@
 				{ name: 'Título 15', element: 'h3', attributes: { 'class': 'bck-title-15'} },
 				{ name: 'Título 16', element: 'h3', attributes: { 'class': 'bck-title-16'} },
 
+				{ name: 'Pa.01 Enunciados', element: 'p', attributes: { 'class': 'bck-p-1'} },
+				{ name: 'Pa.02', element: 'p', attributes: { 'class': 'bck-p-2'} },
+				{ name: 'Pa.03', element: 'p', attributes: { 'class': 'bck-p-3'} },
+
 				{ name: 'Lista ordenada 01', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-1' } },
 				{ name: 'Lista ordenada 02', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-2' } },
 				{ name: 'Lista ordenada 03', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-3' } },
