@@ -1,18 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /*Hereda de Poptropica*/
 :root {
-    --MainFontFamily: 'Montserrat', 'sans-serif';
+    --MainFontFamily: 'Poppins', sans-serif;
     --MainText: 1.6rem;
     --SecondaryText: 1.4rem;
     --MainLineHeight: 1.6;
     --colorppal: #923538;
 }
 
-html body:not(.edit),
-body.edit .navbar.libro {
-  font-family: 'Montserrat', 'sans-serif';
-  line-height: 1.6;
-  font-size: inherit;
-}
 /*Definimos estas reglas para que no dependan del font-size: 10px*/
 html body:not(.edit),
  body.edit .navbar.libro {
