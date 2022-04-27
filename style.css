@@ -13,6 +13,7 @@ html body:not(.edit),
  body.edit .navbar.libro {
     line-height: var(--MainLineHeight);
     font-size: var(--MainText);
+    font-family: var(--MainFontFamily)
 }
 .body_clase #actividad .texto_curso,
  .body_clase #actividad .texto_curso p {
