@@ -567,7 +567,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     background: none;
     margin-right: 5px;
 }
-#actividad .content img {
+.bck-file-attach img {
     display: none;
 }
 .bck-file-attach span {
