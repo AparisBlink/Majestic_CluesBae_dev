@@ -122,18 +122,20 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 }
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .header {
     border: none;
-    margin-bottom: 0;
     background: rgb(var(--colorppal));
     width: calc(100% + var(--SlidePadding) * 2);
     margin-left: calc(-1 * var(--SlidePadding));
-    padding: 30px var(--SlidePadding);
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+    min-height: 88px;
 }
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title {
     margin: 0 0 20px;
     background: rgb(var(--colorppal));
-    width: calc(100% + var(--SlidePadding) * 2);
-    margin-left: calc(-1 * var(--SlidePadding));
+    width: 100%;
     padding: 30px var(--SlidePadding);
+    margin: 0;
 }
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .slide-concatenate .header .title {
     display: none
@@ -149,6 +151,16 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     font-size: calc(var(--MainText) * 1.44);
     font-weight: bold;
     text-align: left
+}
+.content_type_clase_Majestic_CluesBae_dev #actividad .content .header:after {
+    content: "";
+    position: relative;
+    background-image: url(images/logoMajestic.png);
+    width: 130px;
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
 }
 
 .content_type_clase_Majestic_CluesBae_dev #actividad .slide_content_type_1 .pregunta .texto_curso,
@@ -822,19 +834,6 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
     }
 }
 
-/*Correcciones Header slide*/
-@media (max-width: 767px) {
-    .content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title {
-        padding: 20px 97px;
-    }
-}
-
-@media (max-width: 480px) {
-    .content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title {
-        padding: 20px 35px;
-    }
-}
-
 /*------*/
 /*----- AJUSTES cuando se añade imagen de fondo ----------*/
 #actividad .carousel-inner .item-container.aux-bckg .class_slide, #actividad .carousel-inner .item-container.aux-fullscreen.is-left .class_slide {
@@ -938,13 +937,6 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
 }
 
 /*-*/
-/*Header algo más alto*/
-@media (max-width: 579px) {
-    .body_curso #indice .unit-content .header {
-        height: 75px;
-    }
-}
-
 /*----*/
 
 
