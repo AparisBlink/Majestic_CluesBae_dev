@@ -9,7 +9,7 @@
     --MainText: 1.8rem;
     --MainMargin: 0 0 2.0rem;
     --SecondaryText: 1.6rem;
-    --MainLineHeight: 1.6;
+    --MainLineHeight: 1.8;
     --SlidePadding: 5.0rem;
     --colorppal: 183, 40, 65;
 }
@@ -691,6 +691,23 @@ body:not(.edit) .bck-flipbox-face.back {
     font-size: 18px
 }
 
+/*----------------------------------*/
+/*------- PLANTILLAS -----------------*/
+
+/*--- Marcar palabras ----*/
+#actividad .markwords-word {
+    line-height: var(--MainLineHeight) !important;
+}
+#actividad .markword-active,
+#actividad .markword-correct,
+#actividad .markword-false,
+#actividad .markword-solution {
+    line-height: var(--MainLineHeight) !important;
+    padding: 0 4px !important;
+    border: 2px solid rgb(35,31, 32) !important;
+    border-radius: 5px !important;
+    color: rgb(35,31, 32);
+}
 
 
 #actividad .workspace.matching .opciones .opcion:not(.ko):not(.ok),#actividad .workspace.multiple-choice .opcion,#actividad .workspace.ordenar .js-rank-item {
