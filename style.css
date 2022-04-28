@@ -11,7 +11,7 @@
     --SecondaryText: 1.6rem;
     --MainLineHeight: 1.6;
     --SlidePadding: 5.0rem;
-    --colorppal: #B72841;
+    --colorppal: 183, 40, 65;
 }
 
 /*Definimos estas reglas para que no dependan del font-size: 10px*/
@@ -40,7 +40,7 @@ html body:not(.edit),
 
 /*TOC*/
 #indice .units ul li {
-    background: var(--colorppal);
+    background: rgb(var(--colorppal));
     -webkit-border-radius: 18px;
     -moz-border-radius: 18px;
     border-radius: 0;
@@ -58,19 +58,19 @@ html body:not(.edit),
 
 body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title,
 body:not(.isTablet) #indice .units ul li:not(.disabled) a:hover .title {
-    color: var(--colorppal)
+    color: rgb(var(--colorppal))
 }
 
 #indice .units ul li.active:not(.disabled),#indice .units ul li:focus:not(.disabled),body:not(.isTablet) #indice .units ul li:hover:not(.disabled) {
     background: transparent;
-    border: 2px solid var(--colorppal)
+    border: 2px solid rgb(var(--colorppal))
 }
 
 
 
 .btn-primary,.btn-primary.disabled {
     color: #fff;
-    background-color: var(--colorppal);
+    background-color: rgb(var(--colorppal));
     border-color: transparent;
     opacity: 1;
     border-radius: 0
@@ -83,7 +83,7 @@ a:active,
 a:focus,
 a:hover {
     outline: 0;
-    color: var(--colorppal);
+    color: rgb(var(--colorppal));
     text-decoration: none
 }
 
@@ -123,14 +123,14 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .header {
     border: none;
     margin-bottom: 0;
-    background: var(--colorppal);
+    background: rgb(var(--colorppal));
     width: calc(100% + var(--SlidePadding) * 2);
     margin-left: calc(-1 * var(--SlidePadding));
     padding: 30px var(--SlidePadding);
 }
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title {
     margin: 0 0 20px;
-    background: var(--colorppal);
+    background: rgb(var(--colorppal));
     width: calc(100% + var(--SlidePadding) * 2);
     margin-left: calc(-1 * var(--SlidePadding));
     padding: 30px var(--SlidePadding);
@@ -239,7 +239,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 /*-------------*/
 
 .btn-danger,.btn-danger[disabled] {
-    background-color: var(--colorppal)
+    background-color: rgb(var(--colorppal))
 }
 
 .btn-danger,.btn-danger[disabled],.btn-primary[disabled],.btn-primary[disabled]:focus {
@@ -291,7 +291,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     height: 35px;
     font-weight: 700;
     color: #fff;
-    background-color: var(--colorppal);
+    background-color: rgb(var(--colorppal));
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -388,7 +388,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 }
 .cke_contents .bck-ol-1 li:before,
 .content .bck-ol-1 li:before {
-    color: var(--colorppal);
+    color: rgb(var(--colorppal));
 }
 .cke_contents .bck-ol-2 li:before,
 .content .bck-ol-2 li:before {
@@ -411,7 +411,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 .cke_contents .bck-ol-8 li:before,
 .content .bck-ol-8 li:before {
     content: counter(bck-li-counter, upper-roman) ".";
-    color: var(--colorppal); 
+    color: rgb(var(--colorppal)); 
 }
 .cke_contents .bck-ol-6 li:before,
 .content .bck-ol-6 li:before {
@@ -435,7 +435,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 .cke_contents .bck-ol-12 li:before,
 .content .bck-ol-12 li:before {
     content: counter(bck-li-counter, lower-alpha) ".";
-    color: var(--colorppal); 
+    color: rgb(var(--colorppal)); 
 }
 .cke_contents .bck-ol-10 li:before,
 .content .bck-ol-10 li:before {
@@ -474,7 +474,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 /*----------------------------------*/
 /*------------- CAJAS --------------*/
 .bck-box {
-    border: 2px solid var(--colorppal);
+    border: 2px solid rgb(var(--colorppal));
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 25px;
@@ -501,8 +501,53 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     width: 100%;
     margin: var(--MainMargin);
     background-color: transparent;
+    border: 2px solid rgb(35,31, 32);
+}
+.bck-dropdown-button {
+    cursor: pointer;
+}
+.bck-dropdown-titulo {
+    font-size: calc(var(--MainText) * 1.11);
+    padding-left: 10px;
+}
+.bck-dropdown-icon>.fa {
+    border: 2px solid black;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    padding: 9px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.bck-dropdown-content {
+    background-color: #e6e6e6;
 }
 /*-------------*/
+/*------ Archivo adjunto -----*/
+.bck-file-label,
+.bck-sub-label {
+    background: #e6e6e6;
+    max-width: none;
+    border-bottom: 2px solid #000;
+    margin-left: -3px;
+    margin-bottom: 0;
+    border-radius: 0;
+    position: relative;
+    padding: 5px 8px 5px 9px
+}
+
+.bck-file-label:before,.bck-sub-label:before {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 37px;
+    background: rgba(0,0,0,.09);
+    left: -34px;
+    bottom: -2px;
+    border-bottom: 2px solid #000;
+    z-index: 0
+}
 
 /*------ FLIPBOX ----------*/
 #actividad .bck-flipbox {
@@ -517,7 +562,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 /*------ Popup -------*/
 #actividad .info-button {
     margin: var(--MainMargin);
-    color: rgb(var(--colorppal));
+    color: rgb(rgb(var(--colorppal)));
     cursor: pointer;
 }
 /*-------*/
@@ -577,35 +622,14 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     margin-top: -16px
 }
 
-.bck-file-label,.bck-sub-label {
-    background: #e6e6e6;
-    max-width: none;
-    border-bottom: 2px solid #000;
-    margin-left: -3px;
-    margin-bottom: 0;
-    border-radius: 0;
-    position: relative;
-    padding: 5px 8px 5px 9px
-}
 
-.bck-file-label:before,.bck-sub-label:before {
-    content: "";
-    position: absolute;
-    width: 34px;
-    height: 37px;
-    background: rgba(0,0,0,.09);
-    left: -34px;
-    bottom: -2px;
-    border-bottom: 2px solid #000;
-    z-index: 0
-}
 
 .content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container,.content_type_clase_Majestic_CluesBae_dev .slide_main input {
     -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,.075);
     -moz-box-shadow: inset 0 0 0 rgba(0,0,0,.075);
     box-shadow: inset 0 0 0 rgba(0,0,0,.075);
     border: 0 solid #ccc;
-    border-bottom: 2px solid var(--colorppal);
+    border-bottom: 2px solid rgb(var(--colorppal));
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0
@@ -671,18 +695,10 @@ body:not(.edit) .bck-flipbox-face.back {
     font-size: 18px
 }
 
-.bck-dropdown-button {
-    cursor: pointer;
-    border: 2px solid #000
-}
 
-.bck-dropdown-content {
-    background-color: #e6e6e6;
-    border-bottom: 2px solid #000
-}
 
 #actividad .workspace.matching .opciones .opcion:not(.ko):not(.ok),#actividad .workspace.multiple-choice .opcion,#actividad .workspace.ordenar .js-rank-item {
-    border: 2px solid var(--colorppal);
+    border: 2px solid rgb(var(--colorppal));
     background: #fff
 }
 
@@ -699,7 +715,7 @@ body:not(.edit) .bck-flipbox-face.back {
 }
 
 #actividad .workspace.clasificar .clasificar_conjuntos .conjunto .group-box {
-    border: 2px solid var(--colorppal);
+    border: 2px solid rgb(var(--colorppal));
     padding-top: 10px
 }
 
@@ -878,7 +894,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
 }
 #bottom-navigator li.active,
 #bottom-navigator li:hover {
-    background: var(--colorppal);
+    background: rgb(var(--colorppal));
 }
 
 @media only screen and (max-width: 640px) {
