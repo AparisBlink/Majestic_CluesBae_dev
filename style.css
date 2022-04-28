@@ -527,9 +527,9 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 /*------ Archivo adjunto -----*/
 .bck-file-label,
 .bck-sub-label {
-    background: #e6e6e6;
+    background: none;
     max-width: none;
-    border-bottom: 2px solid #000;
+    border: 2px solid rgb(var(--colorppal));
     margin-left: -3px;
     margin-bottom: 0;
     border-radius: 0;
@@ -537,17 +537,23 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     padding: 5px 8px 5px 9px
 }
 
-.bck-file-label:before,.bck-sub-label:before {
-    content: "";
-    position: absolute;
-    width: 34px;
-    height: 37px;
-    background: rgba(0,0,0,.09);
-    left: -34px;
-    bottom: -2px;
-    border-bottom: 2px solid #000;
-    z-index: 0
+.bck-file-attach .bck-file-label:before {
+    font-family: 'FontAwesome';
+    content: "\f15b";
+    position: relative;
+    bottom: 0;
+    left: 0;
+    border: 0;
+    background: none;
+    margin-right: 5px;
 }
+#actividad .content img {
+    display: none;
+}
+.bck-file-attach span {
+    margin: var(--MainMargin);
+}
+
 
 /*------ FLIPBOX ----------*/
 #actividad .bck-flipbox {
