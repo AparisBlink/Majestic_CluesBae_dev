@@ -530,11 +530,18 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     background: none;
     max-width: none;
     border: 2px solid rgb(var(--colorppal));
+    color: rgb(var(--colorppal));
     margin-left: -3px;
     margin-bottom: 0;
     border-radius: 0;
     position: relative;
     padding: 5px 8px 5px 9px
+}
+.bck-file-attach:hover .bck-file-label,
+.bck-file-attach:active .bck-file-label,
+.bck-file-attach:focus .bck-file-label {
+    background-color: rgba(var(--colorppal),0.3);
+    border-color: transparent;
 }
 
 .bck-file-attach .bck-file-label:before {
