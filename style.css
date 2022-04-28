@@ -7,6 +7,7 @@
     --MainFont: 'Poppins', sans-serif;
     --TitleFont:'Lexend Deca', sans-serif;
     --MainText: 1.8rem;
+    --MainMargin: 0 0 2.0rem;
     --SecondaryText: 1.6rem;
     --MainLineHeight: 1.6;
     --SlidePadding: 5.0rem;
@@ -108,6 +109,10 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     margin-top: 30px
 }
 
+/*---------- GENERALES ---------------*/
+#actividad .texto_curso p p:last-child {
+    margin-bottom: 0;
+}
 
 /*----------------------------*/
 /*---- TITULO SLIDE ------------*/
@@ -428,7 +433,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 .content .bck-ol-11 li:before,
 .cke_contents .bck-ol-12 li:before,
 .content .bck-ol-12 li:before {
-    content: counter(bck-li-counter, upper-roman) ".";
+    content: counter(bck-li-counter, lower-alpha) ".";
     color: var(--colorppal); 
 }
 .cke_contents .bck-ol-10 li:before,
@@ -444,18 +449,6 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     color: green;
 }
 
-
-.cke_contents .bck-ol3 li:before,
-.content .bck-ol3 li:before {
-    content: counter(bck-li-counter,lower-alpha) ".";
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    border: none;
-    background: transparent;
-    color: #000;
-    font-size: 2rem
-}
 
 /*------- Listas desordenadas ----------*/
 .cke_contents ul li,
@@ -477,15 +470,16 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     height: 6px;
     background-color: #414141
 }
-
+/*----------------------------------*/
+/*------------- CAJAS --------------*/
 .bck-box {
-    margin: 10px;
-    border: 2px solid #0051a0;
+    border: 2px solid var(--colorppal);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    border-radius: 10px;
+    border-radius: 25px;
     background: #fff;
-    padding: 15px
+    padding: 15px;
+    margin: var(--MainMargin);
 }
 
 .bck-box .bck-content p:last-child {
