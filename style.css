@@ -130,6 +130,9 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     margin-bottom: 20px;
     min-height: 88px;
 }
+.content_type_clase_Majestic_CluesBae_dev #actividad .content .header.empty {
+    display: none;
+}
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title {
     margin: 0 0 20px;
     background: rgb(var(--colorppal));
@@ -177,29 +180,28 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 #actividad .class_slide {
     padding-top: 0
 }
-
-
-.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container,.content_type_clase_Majestic_CluesBae_dev .slide_main input {
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    -moz-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-moz-box-shadow ease-in-out .15s;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out,-moz-box-shadow .15s ease-in-out
+/*----------------------------------*/
+/*Input*/
+.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container,
+.content_type_clase_Majestic_CluesBae_dev .slide_main input {
+    -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,.075);
+    -moz-box-shadow: inset 0 0 0 rgba(0,0,0,.075);
+    box-shadow: inset 0 0 0 rgba(0,0,0,.075);
+    border: 2px solid rgb(var(--colorppal));
+    border-radius: 3px;
 }
-
-.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container:focus,.content_type_clase_Majestic_CluesBae_dev .slide_main input:focus {
+.content_type_clase_Majestic_CluesBae_dev .slide_main .fill-text .img-input-container {
+    display: none
+}
+.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container:focus,
+.content_type_clase_Majestic_CluesBae_dev .slide_main input:focus {
+    border-color: rgba(var(--colorppal),0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(133,200,57,0);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(133,200,57,0);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(133,200,57,0)
+}
+.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container:focus,
+.content_type_clase_Majestic_CluesBae_dev .slide_main input:focus {
     border-color: #3ac62a;
     outline-width: 0;
     outline-style: none;
@@ -207,29 +209,30 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     -moz-box-shadow: 0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(133,200,57,.6);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(133,200,57,.6)
 }
-
-.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container,.content_type_clase_Majestic_CluesBae_dev .slide_main input[disabled],.content_type_clase_Majestic_CluesBae_dev .slide_main input[readonly],fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
+.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container,
+.content_type_clase_Majestic_CluesBae_dev .slide_main input[disabled],
+.content_type_clase_Majestic_CluesBae_dev .slide_main input[readonly],
+fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     cursor: not-allowed;
     background-color: #eee;
     opacity: 1
 }
+/*---------*/
 
-.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container input[disabled],.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container input[readonly] {
-    opacity: 0;
-    filter: alpha(opacity=0)
-}
-
-.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container.respuesta_ok,.content_type_clase_Majestic_CluesBae_dev .slide_main input.respuesta_ok {
+.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container.respuesta_ok,
+.content_type_clase_Majestic_CluesBae_dev .slide_main input.respuesta_ok {
     border-color: #57e900;
     background: #d1f3bd
 }
 
-.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container.respuesta_ko,.content_type_clase_Majestic_CluesBae_dev .slide_main input.respuesta_ko {
+.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container.respuesta_ko,
+.content_type_clase_Majestic_CluesBae_dev .slide_main input.respuesta_ko {
     border-color: #ff3626;
     background: #ffa49d
 }
 
-.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container.solucion,.content_type_clase_Majestic_CluesBae_dev .slide_main input.solucion {
+.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container.solucion,
+.content_type_clase_Majestic_CluesBae_dev .slide_main input.solucion {
     border-color: #00bdff;
     background: #b6ecff
 }
@@ -646,30 +649,6 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     height: 40px;
     width: 54px;
     margin-top: -16px
-}
-
-
-
-.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container,.content_type_clase_Majestic_CluesBae_dev .slide_main input {
-    -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,.075);
-    -moz-box-shadow: inset 0 0 0 rgba(0,0,0,.075);
-    box-shadow: inset 0 0 0 rgba(0,0,0,.075);
-    border: 0 solid #ccc;
-    border-bottom: 2px solid rgb(var(--colorppal));
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0
-}
-
-.content_type_clase_Majestic_CluesBae_dev .slide_main .fill-text .img-input-container {
-    display: none
-}
-
-.content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container:focus,.content_type_clase_Majestic_CluesBae_dev .slide_main input:focus {
-    border-color: #dbc9c9;
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(133,200,57,0);
-    -moz-box-shadow: 0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(133,200,57,0);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(133,200,57,0)
 }
 
 #actividad .info-button {
