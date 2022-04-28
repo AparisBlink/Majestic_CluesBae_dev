@@ -117,7 +117,11 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 }
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .header {
     border: none;
-    margin-bottom: 0
+    margin-bottom: 0;
+    background: var(--colorppal);
+    width: calc(100% + var(--SlidePadding) * 2);
+    margin-left: calc(-1 * var(--SlidePadding));
+    padding: 30px var(--SlidePadding);
 }
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title {
     margin: 0 0 20px;
