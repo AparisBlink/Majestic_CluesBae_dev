@@ -818,12 +818,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
         padding-right: 1em;
         min-height: 43px
     }
-
-    .content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title {
-        padding: 20px
-    }
 }
-
 
 
 /*------ AJUSTES  GENERALES ------------*/
@@ -885,7 +880,6 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
         padding-left: 0;
     }
 }
-
 /*--*/
 /*------ AJUSTES EN EL NAVBAR -------*/
 #bottom-navigator li {
@@ -920,15 +914,15 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
     }
 }
 
-/*-------*/
-/*aJUSTES CKEDITOR*/
-.bck-title1, .bck-title2 {
-    letter-spacing: 0;
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .content_type_clase_Majestic_CluesBae_dev #actividad .content .header:after {
+        display: none;
+    }    
 }
 
-.bck-title2 {
-    width: -moz-fit-content;
-}
+/*-------*/
 
 /*------ AJUSTES EN EL TOC -----*/
 /*Cambiamos la posición de la imagen del TOC para que se visualice el icono en móvil*/
