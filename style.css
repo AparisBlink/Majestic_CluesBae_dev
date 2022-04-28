@@ -401,8 +401,47 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 .cke_contents .bck-ol-6 li:before,
 .content .bck-ol-6 li:before,
 .cke_contents .bck-ol-7 li:before,
+.content .bck-ol-7 li:before,
+.cke_contents .bck-ol-8 li:before,
+.content .bck-ol-8 li:before {
+    content: counter(bck-li-counter, upper-roman) ".";
+    color: var(--colorppal); 
+}
+.cke_contents .bck-ol-6 li:before,
+.content .bck-ol-6 li:before {
+    color: rgb(238, 50, 41); 
+}
+.cke_contents .bck-ol-7 li:before,
 .content .bck-ol-7 li:before {
-    content: counter(bck-li-counter, upper-roman) ".";;
+    color: rgb(0, 192, 243);
+}
+.cke_contents .bck-ol-8 li:before,
+.content .bck-ol-8 li:before {
+    color: green;
+}
+
+.cke_contents .bck-ol-9 li:before,
+.content .bck-ol-9 li:before,
+.cke_contents .bck-ol-10 li:before,
+.content .bck-ol-10 li:before,
+.cke_contents .bck-ol-11 li:before,
+.content .bck-ol-11 li:before,
+.cke_contents .bck-ol-12 li:before,
+.content .bck-ol-12 li:before {
+    content: counter(bck-li-counter, upper-roman) ".";
+    color: var(--colorppal); 
+}
+.cke_contents .bck-ol-10 li:before,
+.content .bck-ol-10 li:before {
+    color: rgb(238, 50, 41); 
+}
+.cke_contents .bck-ol-11 li:before,
+.content .bck-ol-11 li:before {
+    color: rgb(0, 192, 243);
+}
+.cke_contents .bck-ol-12 li:before,
+.content .bck-ol-12 li:before {
+    color: green;
 }
 
 
