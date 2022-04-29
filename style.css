@@ -597,8 +597,9 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 /*------------*/
 
 
-.content table:not(.rf-tablegrid) td,.content table:not(.rf-tablegrid) th {
-    border: 3px solid #fff;
+#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) td,
+#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) th {
+    border: 1px solid rgb(35,31, 32);
     padding: 10px;
     background: transparent
 }
@@ -706,9 +707,17 @@ body:not(.edit) .bck-flipbox-face.back {
     padding: 0 4px !important;
     border: 2px solid rgb(35,31, 32) !important;
     border-radius: 5px !important;
-    color: rgb(35,31, 32);
+    color: rgb(35,31, 32) !important;
 }
-
+#actividad .markword-correct {
+    border-color: #57e900 !important;
+}
+#actividad .markword-false {
+    border-color: #ff3626 !important;
+}
+#actividad .markword-solution {
+    border-color: transparent !important;
+}
 
 #actividad .workspace.matching .opciones .opcion:not(.ko):not(.ok),#actividad .workspace.multiple-choice .opcion,#actividad .workspace.ordenar .js-rank-item {
     border: 2px solid rgb(var(--colorppal));
