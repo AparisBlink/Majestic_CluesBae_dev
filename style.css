@@ -601,19 +601,19 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     background: transparent
 }
 
-#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) .bck-table-1 {
+#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle).bck-table-1 {
     border-color: var(--colorppal);
 }
-#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) .bck-table-1 td,
-#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) .bck-table-1 th {
+#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle).bck-table-1 td,
+#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle).bck-table-1 th {
     border-color: var(--colorppal);
 }
 
-#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) .bck-table-2 {
+#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle).bck-table-2 {
     border: 0;
 }
-#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) .bck-table-2 td,
-#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) .bck-table-2 th {
+#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle).bck-table-2 td,
+#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle).bck-table-2 th {
     border: 0;
 }
 
