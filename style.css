@@ -4,6 +4,7 @@
 
 /*Hereda de Poptropica*/
 :root {
+    --TextColor: 35,31, 32;
     --MainFont: 'Poppins', sans-serif;
     --TitleFont:'Lexend Deca', sans-serif;
     --MainText: 1.8rem;
@@ -515,6 +516,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 .bck-dropdown-titulo {
     font-size: calc(var(--MainText) * 1.11);
     padding-left: 10px;
+    font-weight: bold;
 }
 .bck-dropdown-icon>.fa {
     border: 2px solid black;
@@ -582,9 +584,38 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 /*------ Popup -------*/
 #actividad .info-button {
     margin: var(--MainMargin);
-    color: rgb(rgb(var(--colorppal)));
-    cursor: pointer;
+    color: rgb(var(--colorppal));
 }
+#actividad .info-button {
+    display: flex;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    -webkit-box-shadow: 1px 1px 3px 1px rgba(85,85,85,.55);
+    -moz-box-shadow: 1px 1px 3px 1px rgba(85,85,85,.55);
+    box-shadow: 1px 1px 3px 1px rgba(85,85,85,.55);
+    border: 2px solid rgb(var(--TextColor));
+    margin: var(--MainMargin);
+    color: rgb(var(--colorppal));
+}
+.info-template.shown {
+    background: #fff
+}
+.info-template .info-title.shown {
+    color: rgb(var(--TextColor));
+    font-weight: 700
+}
+.info-template .info-icon {
+    color: rgb(var(--TextColor))
+}
+.info-popover .popover-title,.popover-template .popover-title {
+    color: rgb(var(--TextColor));
+    font-weight: 700
+}
+.fa-info:before,.info-popover .popover-title:before,.popover-template .popover-title:before {
+    color: rgb(var(--TextColor))
+}
+
 /*-------*/
 
 /*------ Tablas y celdas -----------*/
@@ -602,11 +633,11 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 }
 
 #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle).bck-table-1 {
-    border-color: var(--colorppal);
+    border-color: rgb(var(--colorppal));
 }
 #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle).bck-table-1 td,
 #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle).bck-table-1 th {
-    border-color: var(--colorppal);
+    border-color: rgb(var(--colorppal));
 }
 
 #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle).bck-table-2 {
@@ -628,11 +659,14 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 /*------------*/
 
 
-#actividad .player.audio,#actividad .player.video,#help-panel-content .player,#remote-alert-modal-rich .player {
+#actividad .player.audio,
+#actividad .player.video,
+#help-panel-content .player,
+#remote-alert-modal-rich .player {
     height: 28px!important;
     width: 28px;
     display: inline-block;
-    background-color: #333;
+    background-color: rgb(var(--colorppal));
     background-image: url(../../../images/shared/multimedia-icons.png);
     background-repeat: no-repeat;
     -webkit-border-radius: 100%;
@@ -640,11 +674,6 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     border-radius: 100%;
     margin: 0 5px;
     vertical-align: sub
-}
-
-#actividad .player.audio {
-    background: #333 url(../../../images/shared/multimedia-icons.png) 50% no-repeat;
-    background-position: -29px -1px
 }
 
 .item-container .icon:before {
@@ -662,52 +691,22 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     margin-top: -16px
 }
 
-#actividad .info-button {
-    -webkit-box-shadow: 1px 1px 3px 1px rgba(85,85,85,.55);
-    -moz-box-shadow: 1px 1px 3px 1px rgba(85,85,85,.55);
-    box-shadow: 1px 1px 3px 1px rgba(85,85,85,.55);
-    border: 1px solid #000;
-    cursor: pointer
-}
-
-.info-template.shown {
-    background: #fff
-}
-
-.info-template .info-title.shown {
-    color: #000;
-    font-weight: 700
-}
-
-.info-template .info-icon {
-    color: #000
-}
-
-.info-popover .popover-title,.popover-template .popover-title {
-    color: #000;
-    font-weight: 700
-}
-
-.fa-info:before,.info-popover .popover-title:before,.popover-template .popover-title:before {
-    color: #000
-}
-
 body:not(.edit) .front .bck-flipbox-section,body:not(.edit) .front .bck-flipbox-title {
-    color: #000;
+    color: rgb(var(--TextColor));
     font-size: 18px
 }
 
 body:not(.edit) .bck-flipbox-face.front {
-    color: #000;
-    border-color: #000;
+    color: rgb(var(--TextColor));
+    border-color: rgb(var(--TextColor));
     -moz-box-shadow: 4px 6px 5px rgba(0,0,0,.26);
     -webkit-box-shadow: 4px 6px 5px rgba(0,0,0,.26);
     box-shadow: 4px 6px 5px rgba(0,0,0,.26)
 }
 
 body:not(.edit) .bck-flipbox-face.back {
-    background-color: #000;
-    border-color: #000;
+    background-color: rgb(var(--TextColor));
+    border-color: rgb(var(--TextColor));
     font-size: 18px
 }
 
