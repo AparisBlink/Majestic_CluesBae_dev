@@ -587,16 +587,13 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 }
 /*-------*/
 
-/*------ Tablas -----------*/
+/*------ Tablas y celdas -----------*/
 #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) {
     width: 100%;
-    border: solid 2px rgb(var(--main-color));
+    border: solid 2px rgb(35,31, 32);
     font-size: var(--MainText);
     margin: var(--MainMargin);
 }
-/*------------*/
-
-
 #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) td,
 #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) th {
     border: 1px solid rgb(35,31, 32);
@@ -604,10 +601,32 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     background: transparent
 }
 
-.content table:not(.rf-tablegrid) {
-    border: 1px solid transparent;
-    margin-bottom: 20px
+#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) .bck-table-1 {
+    border-color: var(--colorppal);
 }
+#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) .bck-table-1 td,
+#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) .bck-table-1 th {
+    border-color: var(--colorppal);
+}
+
+#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) .bck-table-2 {
+    border: 0;
+}
+#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) .bck-table-2 td,
+#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) .bck-table-2 th {
+    border: 0;
+}
+
+#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) td.bck-td-1 {
+    background-color: rgb(var(--colorppal));
+    color: #ffffff;
+}
+#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) td.bck-td-2 {
+    background-color: rgba(var(--colorppal),0.2);
+}
+
+/*------------*/
+
 
 #actividad .player.audio,#actividad .player.video,#help-panel-content .player,#remote-alert-modal-rich .player {
     height: 28px!important;
