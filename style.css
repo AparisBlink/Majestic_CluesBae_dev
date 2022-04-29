@@ -596,7 +596,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 }
 #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) td,
 #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) th {
-    border: 1px solid rgb(35,31, 32);
+    border: 2px solid rgb(35,31, 32);
     padding: 10px;
     background: transparent
 }
