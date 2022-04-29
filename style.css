@@ -588,6 +588,8 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 }
 #actividad .info-button {
     display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     width: 44px;
     height: 44px;
@@ -669,11 +671,12 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     background-color: rgb(var(--colorppal));
     background-image: url(../../../images/shared/multimedia-icons.png);
     background-repeat: no-repeat;
+    background-position-x: -30px;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
     margin: 0 5px;
-    vertical-align: sub
+    vertical-align: sub;
 }
 
 .item-container .icon:before {
