@@ -80,13 +80,7 @@ body:not(.isTablet) #indice .units ul li:not(.disabled) a:hover .title {
 body.content_type_clase_Majestic_CluesBae_dev {
     font-size: 1.8rem
 }
-a:active,
-a:focus,
-a:hover {
-    outline: 0;
-    color: rgb(var(--colorppal));
-    text-decoration: none
-}
+
 
 body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     padding: 5px
@@ -114,6 +108,16 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 #actividad .texto_curso p p:last-child {
     margin-bottom: 0;
 }
+/*-- ENLACES --*/
+a:active,
+a:focus,
+a:hover {
+    outline: 0;
+    color: rgb(var(--colorppal));
+    text-decoration: none
+}
+/*----*/
+
 
 /*----------------------------*/
 /*---- TITULO SLIDE ------------*/
@@ -460,23 +464,41 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 
 /*------- Listas desordenadas ----------*/
 .cke_contents ul li,
-.texto_curso ul li,
+ .texto_curso ul li,
  .workspace ul li ul li {
     padding-left: 16px;
     line-height: var(--MainLineHeight) !important;
 }
 
-.cke_contents ul li:before,.texto_curso ul li:before,
- .workspace ul li ul li:before {
-    width: 4px;
-    height: 4px
+.cke_contents ul li:before,
+ .texto_curso ul li:before,
+  .workspace ul li ul li:before {
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-top: 1.3rem;
+    margin-left: -1.5rem;
+    background-color: #414141;
 }
 
-.cke_contents ul li:before,.texto_curso ul li:before,
-.workspace ul li ul li:before {
-    width: 6px;
-    height: 6px;
-    background-color: #414141
+.cke_contents .bck-ul-1 li:before,
+ .texto_curso .bck-ul-1 li:before,
+  .workspace ul li .bck-ul-1 li:before {
+    background-color: rgb(var(--colorppal));
+}
+.cke_contents .bck-ul-2 li:before,
+ .texto_curso .bck-ul-2 li:before,
+  .workspace ul li .bck-ul-2 li:before {
+    background-color: rgb(238, 50, 41);
+}
+.cke_contents .bck-ul-3 li:before,
+ .texto_curso .bck-ul-3 li:before,
+  .workspace ul li .bck-ul-3 li:before {
+    background-color: rgb(0, 192, 243);
+}
+.cke_contents .bck-ul-4 li:before,
+ .texto_curso .bck-ul-4 li:before,
+  .workspace ul li .bck-ul-4 li:before {
+    background-color: green;
 }
 /*----------------------------------*/
 /*------------- CAJAS --------------*/
