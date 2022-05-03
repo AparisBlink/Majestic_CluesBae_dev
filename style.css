@@ -632,12 +632,32 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 .info-template .info-icon {
     color: rgb(var(--TextColor))
 }
-.info-popover .popover-title,.popover-template .popover-title {
+.info-popover .popover-title
+.popover-template .popover-title {
     color: rgb(var(--TextColor));
-    font-weight: 700
+    font-weight: 700;
+    font-size: var(--MainText);
+    padding: 1.0rem 1.5rem;
 }
-.fa-info:before,.info-popover .popover-title:before,.popover-template .popover-title:before {
-    color: rgb(var(--TextColor))
+.fa-info:before,
+.info-popover .popover-title:before,
+.popover-template .popover-title:before {
+    display: none;
+}
+.info-popover .popover-content,
+ .popover-template .popover-content {
+    padding: 1.0rem 1.5rem;
+}
+
+/*--- Tooltip---*/
+.popover .popover-title {
+    font-size: calc(var(--MainText) / 1.2);
+    font-weight: bold;
+    line-height: var(--MainLineHeight);
+}
+.popover .popover-content {
+    font-size: calc(var(--MainText) / 1.2);
+    line-height: var(--MainLineHeight);
 }
 
 /*-------*/
