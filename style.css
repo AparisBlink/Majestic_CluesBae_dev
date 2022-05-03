@@ -111,13 +111,15 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     margin-bottom: 0;
 }
 /*-- ENLACES --*/
-#actividad .slide-wrapper a:not(.audio) {
+#actividad .slide-wrapper a:not(.audio,.bck-file-attach) {
     text-decoration: underline;
-}
-#actividad .slide-wrapper a:not(.audio):active,
-#actividad .slide-wrapper a:not(.audio):focus,
-#actividad .slide-wrapper a:not(.audio):hover {
     color: rgb(var(--colorppal));
+}
+#actividad .slide-wrapper a:not(.audio,.bck-file-attach):active,
+#actividad .slide-wrapper a:not(.audio,.bck-file-attach):focus,
+#actividad .slide-wrapper a:not(.audio,.bck-file-attach):hover {
+    color: rgb(var(--colorppal));
+    background-color: rgba(var(--colorppal),0.2);
 }
 /*----*/
 
@@ -370,6 +372,20 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     font-size: calc(var(--MainText) * 1.4); /*25px*/
     color: rgb(var(--TextColor));
 }
+.bck-title-9,
+.bck-title-10 {
+    display: inline-block;
+    background-color: rgba(var(--colorppal),0.15);
+    color: rgb(var(--colorppal));
+    font-weight: bold;
+    font-family: var(--TitleFontBAE);
+    padding: 5px 35px;
+    box-shadow: 0px 5px 14px 0px #00000030;
+}
+.bck-title-10 {
+    background-color: rgba(var(--colorppal),0.3);
+    color: rgb(var(--TextColor));
+}
 
 /*----------- Estilo de parrafo ---------*/
 #actividad p.bck-p-1 {
@@ -614,6 +630,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     display: none;
 }
 .bck-file-attach span {
+    display: block;
     margin: var(--MainMargin);
 }
 
