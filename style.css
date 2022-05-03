@@ -8,6 +8,7 @@
     --TextColor: 35,31, 32;
     --MainFont: 'Poppins', sans-serif;
     --TitleFont:'Lexend Deca', sans-serif;
+    --TitleFontBAE: 'Arvo', serif;
     --MainText: 1.8rem;
     --MainMargin: 0 0 2.0rem;
     --SecondaryText: 1.6rem;
@@ -347,6 +348,22 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 }
 .bck-title-4 {
     font-size: calc(var(--MainText) * 1.11); /*20px*/
+}
+
+.bck-title-5 {
+    font-family: var(--TitleFontBAE);
+    font-size: calc(var(--MainText) * 1.7); /*30px*/
+    color: rgb(var(--colorppal));
+}
+.bck-title-6 {
+    font-family: var(--TitleFontBAE);
+    font-size: calc(var(--MainText) * 1.4); /*25px*/
+    color: rgba(var(--colorppal), 0.5);
+}
+.bck-title-7 {
+    font-family: var(--TitleFontBAE);
+    font-size: calc(var(--MainText) * 1.4); /*25px*/
+    color: rgb(var(--TextColor));
 }
 
 /*----------- Estilo de parrafo ---------*/
@@ -996,12 +1013,11 @@ and (max-device-width : 480px) {
 /*----*/
 
 /*------- coursetag_BAE_majestic --------*/
-.coursetag_BAE_majestic {
---TitleFont: 'Arvo', serif;
-}
-
 .coursetag_bae_majestic  #actividad .content .header .title {
     border-radius: 0px 0px 30px 30px;
     width: fit-content;
     width: -moz-fit-content;
+}
+.content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title h3 {
+    font-family: var(--TitleFontBAE);
 }
