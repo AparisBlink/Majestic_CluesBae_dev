@@ -376,7 +376,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 .bck-title-9,
 .bck-title-10 {
     display: inline-block;
-    background-color: rgba(var(--colorppal),0.15);
+    background-color: rgb(var(--color2BAE));
     color: rgb(var(--colorppal));
     font-weight: bold;
     font-family: var(--TitleFontBAE);
