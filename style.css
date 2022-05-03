@@ -183,7 +183,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     font-size: 1.8rem
 }
 .texto_curso p:last-of-type {
-    margin-bottom: 15px
+    margin-bottom: 0
 }
 .content_type_clase_Majestic_CluesBae_dev #actividad .texto_curso li,
 .content_type_clase_Majestic_CluesBae_dev #actividad .workspace ul li li {
