@@ -352,15 +352,20 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 
 .bck-title-5 {
     font-family: var(--TitleFontBAE);
-    font-size: calc(var(--MainText) * 1.7); /*30px*/
+    font-size: calc(var(--MainText) * 2); /*36px*/
     color: rgb(var(--colorppal));
 }
 .bck-title-6 {
     font-family: var(--TitleFontBAE);
     font-size: calc(var(--MainText) * 1.4); /*25px*/
-    color: rgba(var(--colorppal), 0.5);
+    color: rgb(var(--colorppal));
 }
 .bck-title-7 {
+    font-family: var(--TitleFontBAE);
+    font-size: calc(var(--MainText) * 1.4); /*25px*/
+    color: rgba(var(--colorppal), 0.5);
+}
+.bck-title-8 {
     font-family: var(--TitleFontBAE);
     font-size: calc(var(--MainText) * 1.4); /*25px*/
     color: rgb(var(--TextColor));
