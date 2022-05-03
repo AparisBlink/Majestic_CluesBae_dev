@@ -109,12 +109,13 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     margin-bottom: 0;
 }
 /*-- ENLACES --*/
-a:active,
-a:focus,
-a:hover {
-    outline: 0;
+#actividad .slide-wrapper a:not(.audio) {
+    text-decoration: underline;
+}
+#actividad .slide-wrapper a:not(.audio):active,
+#actividad .slide-wrapper a:not(.audio):focus,
+#actividad .slide-wrapper a:not(.audio):hover {
     color: rgb(var(--colorppal));
-    text-decoration: none
 }
 /*----*/
 
