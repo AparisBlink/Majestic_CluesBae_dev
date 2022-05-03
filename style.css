@@ -580,7 +580,19 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 .bck-box.bck-box-3 {
     border: 0;
     border-radius: 0;
-    background-color: rgba(var(--color2BAE),0.7);
+    padding: 0;
+}
+.bck-box.bck-box-3 .bck-title {
+    background-color: rgb(var(--color2BAE));
+    display: inline-block;
+    font-family: var(--TitleFontBAE);
+    color: rgb(var(--colorppal));
+    font-weight: bold;
+    padding: 5px 30px;
+}
+.bck-box.bck-box-3 .bck-content {
+    background-color: rgb(var(--color2BAE));
+    padding: 15px;
 }
 
 /*------- GRIDS ------------------*/
