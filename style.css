@@ -15,6 +15,7 @@
     --MainLineHeight: 1.8;
     --SlidePadding: 5.0rem;
     --colorppal: 183, 40, 65;
+    --color2BAE: 230, 218, 190;
 }
 
 /*Definimos estas reglas para que no dependan del font-size: 10px*/
@@ -392,6 +393,20 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     font-size: calc(var(--MainText) * 1.11); /*20px*/
 }
 
+/*--------- ENFASIS ---------------*/
+.bck-enfasis-1 {
+    color: #00AEEF;
+}
+.bck-enfasis-2 {
+    border-bottom: 2px solid #00AEEF;
+}
+.bck-enfasis-3 {
+    border-bottom: 2px solid;
+}
+.bck-enfasis-4 {
+    color: rgb(var(--colorppal));
+}
+
 /*------------ Listas ordenadas -----------*/
 .cke_contents .bck-ol,
 .cke_contents ol,
@@ -554,6 +569,18 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 }
 .bck-box-1 {
     border-color: rgb(215,73,12);
+}
+.bck-box.bck-box-2 {
+    padding: 0;
+    width: calc(100% + var(--SlidePadding) * 2);
+    margin-left: calc(-1 * var(--SlidePadding));
+    border: 0;
+    text-align: center;
+}
+.bck-box.bck-box-3 {
+    border: 0;
+    border-radius: 0;
+    background-color: rgba(var(--color2BAE),0.7);
 }
 
 /*------- GRIDS ------------------*/
