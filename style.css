@@ -690,6 +690,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 }
 .bck-box.bck-box-9 .bck-title,
 .bck-box.bck-box-10 .bck-title {
+    font-family: 'Architects Daughter', cursive;
     background-color: #f9d45f;
     padding: 0.5rem 1.5rem;
     text-align: center;
@@ -796,6 +797,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     background: #E17B6D;
 }
 .bck-box.bck-box-14 > .bck-title {
+    font-family: 'Architects Daughter', cursive;
     padding: 10px 15px 10px 50px;
 }
 .bck-box.bck-box-14 > .bck-content {
