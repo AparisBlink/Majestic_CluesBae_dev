@@ -559,6 +559,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 /*----------------------------------*/
 /*------------- CAJAS --------------*/
 .bck-box {
+    position: relative;
     border: 2px solid rgb(var(--colorppal));
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -688,7 +689,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 }
 .bck-box.bck-box-9 .bck-title,
 .bck-box.bck-box-10 .bck-title {
-    background-color: #FCDD7B;
+    background-color: #f9d45f;
     padding: 0.5rem 1.5rem;
     text-align: center;
     font-weight: bold
@@ -729,6 +730,53 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     background: linear-gradient(135deg, #B0D57A 81%,#B0D57A 82%,#B0D57A 82%,#ebffcd 100%);
 }
 /*--*/
+.bck-box.bck-box-11 {
+    border: 0;
+    border-radius: 0;
+    background-color: #CEEBE9;
+    padding-bottom: 35px;
+    margin-bottom: 25px;
+}
+.bck-box.bck-box-11 .bck-title {
+    font-weight: bold;
+}
+.bck-box.bck-box-11:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    background-image: url(images/Imagen_recorte.png);
+    bottom: -12px;
+    background-size: auto 30px;
+    background-repeat: repeat no-repeat;
+}
+
+/*Cajas dialogos*/
+.bck-box.bck-box-12,
+.bck-box.bck-box-13 {
+    background-color: #ffffff;
+    border-color: #58A7DC;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+.bck-box-12:after,
+.bck-box-13:after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    right: 70px;
+    height: 31px;
+    width: 30px;
+    background: #ffffff;
+    transform: rotate(45deg) matrix(1, 0, 0, 1, 0, 0);
+    border-bottom: inherit;
+    border-right: inherit;
+}
+.bck-box-13:after {
+    right: 0;
+    left: 70px;
+}
 
 
 
