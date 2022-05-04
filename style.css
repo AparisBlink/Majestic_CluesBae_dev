@@ -180,8 +180,9 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 }
 
 .content_type_clase_Majestic_CluesBae_dev #actividad .slide_content_type_1 .pregunta .texto_curso,
-.content_type_clase_Majestic_CluesBae_dev #actividad .texto_curso,.html-book {
-    font-size: 1.8rem
+.content_type_clase_Majestic_CluesBae_dev #actividad .texto_curso,
+.html-book {
+    font-size: var(--MainText);
 }
 .texto_curso p:last-of-type {
     margin-bottom: 0
