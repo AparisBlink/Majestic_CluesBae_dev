@@ -697,7 +697,8 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     text-align:center;     
     min-height:250px;
     position:relative;   
-    border:1px solid #E8E8E8;   
+    border:1px solid #E8E8E8;
+    border-top: 0;   
     display:inline-block;    
     background: #FCDD7B;
     background: -webkit-linear-gradient(-45deg, #FCDD7B 81%,#FCDD7B 82%,#FCDD7B 82%,#ffefba 100%);
