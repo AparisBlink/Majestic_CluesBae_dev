@@ -690,6 +690,8 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 .bck-box.bck-box-10 .bck-title {
     background-color: #FCDD7B;
     padding: 0.5rem 1.5rem;
+    text-align: center;
+    font-weight: bold
 }
 .bck-box.bck-box-9 .bck-content,
 .bck-box.bck-box-10 .bck-content {
