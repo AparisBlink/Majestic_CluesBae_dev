@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 /*Hereda de Poptropica*/
 :root {
@@ -9,10 +10,10 @@
     --MainFont: 'Poppins', sans-serif;
     --TitleFont:'Lexend Deca', sans-serif;
     --TitleFontBAE: 'Arvo', serif;
-    --MainText: 1.8rem;
+    --MainText: 1.6rem;
     --MainMargin: 0 0 2.0rem;
-    --SecondaryText: 1.6rem;
-    --MainLineHeight: 1.8;
+    --SecondaryText: 1.4rem;
+    --MainLineHeight: 2.6rem;
     --SlidePadding: 5.0rem;
     --colorppal: 183, 40, 65;
     --color2BAE: 230, 218, 190;
@@ -776,6 +777,30 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 .bck-box-13:after {
     right: 0;
     left: 70px;
+}
+.bck-box.bck-box-14 {
+    border: 0;
+    border-radius: 0;
+    background-image: url(images/papel_arrugado.jpg);
+    background-size: contain;
+    background-repeat: round;
+    padding: 0;
+}
+.bck-box.bck-box-14:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 35px;
+    background: #E17B6D;
+}
+.bck-box.bck-box-14 > .bck-title {
+    padding: 10px 15px 10px 50px;
+}
+.bck-box.bck-box-14 > .bck-content {
+    padding: 10px 15px 10px 50px;
+    background-image: repeating-linear-gradient(to bottom, transparent, transparent 24px, #60ABDD var(--MainLineHeight));
 }
 
 
