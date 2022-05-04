@@ -802,7 +802,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     padding: 10px 15px 10px 50px;
 }
 .bck-box.bck-box-14 > .bck-content {
-    padding: 10px 15px 10px 50px;
+    padding: 0px 15px 15px 50px;
     background-image: repeating-linear-gradient(to bottom, transparent, transparent 24px, #60ABDD var(--MainLineHeight));
 }
 
