@@ -478,7 +478,9 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 .cke_contents .bck-ol-7 li:before,
 .content .bck-ol-7 li:before,
 .cke_contents .bck-ol-8 li:before,
-.content .bck-ol-8 li:before {
+.content .bck-ol-8 li:before,
+.cke_contents .bck-ol-15 li:before,
+.content .bck-ol-15 li:before {
     content: counter(bck-li-counter, upper-roman) ".";
     color: rgb(var(--colorppal)); 
 }
@@ -494,6 +496,10 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 .content .bck-ol-8 li:before {
     color: green;
 }
+.cke_contents .bck-ol-15 li:before,
+.content .bck-ol-15 li:before {
+    color: rgb(var(--TextColor));
+}
 
 .cke_contents .bck-ol-9 li:before,
 .content .bck-ol-9 li:before,
@@ -502,7 +508,9 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 .cke_contents .bck-ol-11 li:before,
 .content .bck-ol-11 li:before,
 .cke_contents .bck-ol-12 li:before,
-.content .bck-ol-12 li:before {
+.content .bck-ol-12 li:before,
+.cke_contents .bck-ol-16 li:before,
+.content .bck-ol-16 li:before {
     content: counter(bck-li-counter, lower-alpha) ".";
     color: rgb(var(--colorppal)); 
 }
@@ -518,6 +526,23 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 .content .bck-ol-12 li:before {
     color: green;
 }
+.cke_contents .bck-ol-16 li:before,
+.content .bck-ol-16 li:before {
+    color: rgb(var(--TextColor));
+}
+
+.cke_contents .bck-ol-13 li:before,
+.content .bck-ol-13 li:before,
+.cke_contents .bck-ol-14 li:before,
+.content .bck-ol-14 li:before {
+    content: counter(bck-li-counter, lower-alpha) ")";
+    color: rgb(var(--colorppal)); 
+}
+.cke_contents .bck-ol-14 li:before,
+.content .bck-ol-14 li:before {
+    color: rgb(var(--TextColor));
+}
+
 
 
 /*------- Listas desordenadas ----------*/
