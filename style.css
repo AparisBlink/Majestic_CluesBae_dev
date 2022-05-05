@@ -601,12 +601,18 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 .bck-box-1 {
     border-color: rgb(215,73,12);
 }
-:not(.edti).bck-box.bck-box-2 {
+:not(.edit).bck-box.bck-box-2 {
     padding: 0;
     width: calc(100% + var(--SlidePadding) * 2);
     margin-left: calc(-1 * var(--SlidePadding));
     border: 0;
     text-align: center;
+}
+:not(.edit).bck-box.bck-box-2 .bck-i-fullscreen-wrapper  {
+    padding: 0;
+}
+body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img {
+    padding: 0;
 }
 .bck-box.bck-box-3 {
     border: 0;
