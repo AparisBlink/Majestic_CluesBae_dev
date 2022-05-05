@@ -817,7 +817,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     background-repeat: repeat-y;
     background-size: 30px 30px;
     padding: 40px 15px 15px 40px;
-    margin: 55px 0 20px;
+    margin:55px 0 30px;
     box-shadow: 1px 2px 3px #0000003b;
     transform: rotate(-1deg);
 }
@@ -836,6 +836,24 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     background: #FBC0A0;
     mix-blend-mode: multiply;
 }
+
+.bck-box.bck-box-16 {
+    border-radius: 0;
+    border: 0;
+    box-shadow: 2px 2px 6px #0000005c;
+    padding-left: 35px;
+}
+.bck-box.bck-box-16:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 100%;
+    background-color: #F58A6D;
+    left: 0;
+    top: 0;
+    border-right: 7px double #ffffff;
+}
+
 
 
 /*------- GRIDS ------------------*/
