@@ -601,7 +601,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 .bck-box-1 {
     border-color: rgb(215,73,12);
 }
-.bck-box.bck-box-2 {
+:not(.edti).bck-box.bck-box-2 {
     padding: 0;
     width: calc(100% + var(--SlidePadding) * 2);
     margin-left: calc(-1 * var(--SlidePadding));
@@ -651,7 +651,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     font-family: var(--TitleFontBAE);
     color: #ffffff;
     min-width: 200px;
-    padding-left: 9.0rem;
+    padding-left: 8.0rem;
     border-radius: 20px 20px 0px 0px;
     position: relative;
 }
@@ -664,11 +664,11 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     background-image: url(images/icono_learnmore.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 70px;
-    width: 70px;
-    height: 70px;
+    background-size: 60px;
+    width: 60px;
+    height: 60px;
     left: 0.7rem;
-    top: -1.0rem;
+    top: -1.2rem;
 }
 .bck-box.bck-box-5 .bck-content,
 .bck-box.bck-box-6 .bck-content,
@@ -726,7 +726,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 .bck-box.bck-box-10 .bck-content {
     padding: 1.0rem;
     text-align:center;     
-    min-height:250px;
+    min: height 150px;
     position:relative;   
     border:1px solid #E8E8E8;
     border-top: 0;   
