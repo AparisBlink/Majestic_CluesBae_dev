@@ -1416,8 +1416,13 @@ and (max-device-width : 480px) {
     font-family: var(--TitleFontBAE);
 }
 .coursetag_bae_majestic #actividad .player.audio,
-.coursetag_bae_majestic #actividad .player.video,
-.coursetag_bae_majestic #help-panel-content .player,
-.coursetag_bae_majestic #remote-alert-modal-rich .player {
+ .coursetag_bae_majestic #actividad .player.video,
+  .coursetag_bae_majestic #help-panel-content .player,
+   .coursetag_bae_majestic #remote-alert-modal-rich .player {
     background-image: url(images/icono_audio.png);
+    background-position: center center;
+    background-color: transparent;
+    height: 35px !important;
+    width: 35px;
+    vertical-align: middle;
 }
