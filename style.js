@@ -131,7 +131,13 @@
 				{ name: 'Celda 12', element: 'td', attributes: { 'class': 'bck-td bck-td-12'} },
 				{ name: 'Celda 13', element: 'td', attributes: { 'class': 'bck-td bck-td-13'} },
 				{ name: 'Celda 14', element: 'td', attributes: { 'class': 'bck-td bck-td-14'} },
-				{ name: 'Celda 15', element: 'td', attributes: { 'class': 'bck-td bck-td-15'} }
+				{ name: 'Celda 15', element: 'td', attributes: { 'class': 'bck-td bck-td-15'} },
+
+				{ name: 'Icono Creativity', element: 'span', attributes: { 'class': 'icon icon-creativity' } },
+				{ name: 'Icono Critical Thinking', element: 'span', attributes: { 'class': 'icon icon-criticalThinking' } },
+				{ name: 'Icono Grupo', element: 'span', attributes: { 'class': 'icon icon-grupo' } },
+				{ name: 'Icono Literacy', element: 'span', attributes: { 'class': 'icon icon-literacy' } },
+				{ name: 'Icono Parejas', element: 'span', attributes: { 'class': 'icon icon-parejas' } }
 			]
 		},
 
