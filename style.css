@@ -558,7 +558,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
   .workspace ul li ul li:before {
     width: 0.6rem;
     height: 0.6rem;
-    margin-top: 1.3rem;
+    margin-top: calc(var(--MainLineHeight) * 0.4);
     margin-left: -1.5rem;
     background-color: #414141;
 }
