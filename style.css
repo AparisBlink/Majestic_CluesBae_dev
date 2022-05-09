@@ -1336,7 +1336,8 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
     border-color: transparent !important;
 }
 
-#actividad .workspace.matching .opciones .opcion:not(.ko):not(.ok),#actividad .workspace.multiple-choice .opcion,#actividad .workspace.ordenar .js-rank-item {
+#actividad .workspace.matching .opciones .opcion:not(.ko):not(.ok),
+#actividad .workspace.multiple-choice .opcion,#actividad .workspace.ordenar .js-rank-item {
     border: 2px solid rgb(var(--colorppal));
     background: #fff
 }
@@ -1381,6 +1382,9 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
 /*--- ORDENAR -----*/
 #actividad .workspace.ordenar .js-rank-item {
     cursor: move;
+}
+#actividad .workspace.ordenar .js-rank-item .posicion {
+    font-weight: bold;
 }
 /*---*/
 /*--- SEÑALAR RESPUESTA ---*/
