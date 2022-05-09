@@ -1804,9 +1804,6 @@ and (max-device-width : 480px) {
 
 
 /*------- coursetag_BAE_majestic --------*/
-.coursetag_bae_majestic  {
-    --colorppal:
-}
 .coursetag_bae_majestic  #actividad .content .header .title {
     border-radius: 0px 0px 30px 30px;
     width: fit-content;
