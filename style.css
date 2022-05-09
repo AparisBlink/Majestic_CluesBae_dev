@@ -50,30 +50,47 @@ html body:not(.edit),
 
 /*TOC*/
 #indice .units ul li {
-    background: rgb(var(--colorppal));
+    background: none;
     -webkit-border-radius: 18px;
     -moz-border-radius: 18px;
-    border-radius: 0;
+    border-radius: 5px;
     margin-bottom: 8px;
-    padding: 4px 8px
+    padding: 0;
+    border: 2px dashed rgb(var(--colorppal));
+}
+#indice .units ul li a:not(.delete) {
+    display: block;
+    padding: 10px;
 }
 #indice .units ul li a .title {
     font-size: 16px;
     font-weight: 700;
-    color: #fff;
+    color: rgb(var(--colorppal));
     margin: -21px 0 0 35px;
     line-height: 18px;
-    display: block
+    display: block;
 }
 
+#indice .units ul li.active:not(.disabled),
+#indice .units ul li:focus:not(.disabled),
+body:not(.isTablet) #indice .units ul li:hover:not(.disabled) {
+    background: rgb(var(--colorppal));
+    border: 2px solid rgb(var(--colorppal))
+}
 body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title,
 body:not(.isTablet) #indice .units ul li:not(.disabled) a:hover .title {
-    color: rgb(var(--colorppal))
+    color: #ffffff;
 }
 
-#indice .units ul li.active:not(.disabled),#indice .units ul li:focus:not(.disabled),body:not(.isTablet) #indice .units ul li:hover:not(.disabled) {
-    background: transparent;
+#indice .units ul li.unittag_cuadernotrabajo_majestic.active:not(.disabled),
+#indice .units ul li.unittag_cuadernotrabajo_majestic:focus:not(.disabled),
+body:not(.isTablet) #indice .units ul li.unittag_cuadernotrabajo_majestic:hover:not(.disabled) {
+    background: rgb(var(--colorppal));
     border: 2px solid rgb(var(--colorppal))
+}
+body:not(.isTablet) #indice .units ul li.unittag_cuadernotrabajo_majestic.active:not(.disabled) a .title,
+body:not(.isTablet) #indice .units ul li.unittag_cuadernotrabajo_majestic:not(.disabled) a:hover .title {
+    color: #ffffff;
 }
 
 
