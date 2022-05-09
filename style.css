@@ -9,10 +9,10 @@
     --MainFont: 'Poppins', sans-serif;
     --TitleFont:'Lexend Deca', sans-serif;
     --TitleFontBAE: 'Arvo', serif;
-    --MainText: 1.6rem;
+    --MainText: 1.8rem;
     --MainMargin: 0 0 2.0rem;
-    --SecondaryText: 1.4rem;
-    --MainLineHeight: 2.6rem;
+    --SecondaryText: 1.6rem;
+    --MainLineHeight: 2.9rem;
     --SlidePadding: 5.0rem;
 
     --TextColor: 35,31, 32;
@@ -985,6 +985,8 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box.bck-b
 }
 .bck-dropdown-button {
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 .bck-dropdown-titulo {
     font-size: calc(var(--MainText) * 1.11);
@@ -1831,4 +1833,15 @@ body:not(.isTablet) #indice .units ul li.unittag_cuadernotrabajo_majestic:hover:
 body:not(.isTablet) #indice .units ul li.unittag_cuadernotrabajo_majestic.active:not(.disabled) a .title,
 body:not(.isTablet) #indice .units ul li.unittag_cuadernotrabajo_majestic:not(.disabled) a:hover .title {
     color: rgb(var(--colorppal));
+}
+
+/* Smartphones (portrait & landscape) */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    :root {
+        --MainText: 1.6rem;
+        --MainLineHeight: 2.6rem;
+        --SecondaryText: 1.5rem;
+    }
 }
