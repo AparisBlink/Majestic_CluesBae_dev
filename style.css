@@ -6,7 +6,6 @@
 
 /*Hereda de Poptropica*/
 :root {
-    --TextColor: 35,31, 32;
     --MainFont: 'Poppins', sans-serif;
     --TitleFont:'Lexend Deca', sans-serif;
     --TitleFontBAE: 'Arvo', serif;
@@ -15,8 +14,14 @@
     --SecondaryText: 1.4rem;
     --MainLineHeight: 2.6rem;
     --SlidePadding: 5.0rem;
+
+    --TextColor: 35,31, 32;
     --colorppal: 183, 40, 65;
     --color2BAE: 230, 218, 190;
+
+    --error-color: 244, 6, 6 /*#F40606*/;
+    --ok-color: 0, 134, 56 /*#008638*/;
+    --solution-color: 148, 232, 234 /*94E8EA*/;
 }
 
 /*Definimos estas reglas para que no dependan del font-size: 10px*/
@@ -1295,11 +1300,11 @@ body:not(.edit) .bck-flipbox-face.back {
 /*----- TEST --------*/
 
 .test .checkbox-option label.filter-label {
-    font-size: var(--NormalSize);
+    font-size: var(--MainText);
 }
 .workspace.test .checkbox-option input.filter-checkbox[type="checkbox"]+label.filter-label, 
 .workspace.test .radio-option input.filter-radio[type="radio"]+label.filter-label {
-    font-size: var(--NormalSize);
+    font-size: var(--MainText);
     display: flex;
     align-items: center;
     line-height: 24px;
