@@ -622,6 +622,12 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 #actividad .bck-box .bck-title p {
     font-size: calc(var(--MainText) * 1.1);
 }
+.bck-box .bck-title p:last-child {
+    margin-bottom: 0;
+}
+.bck-box .bck-content p:last-child {
+    margin-bottom: 0;
+}
 .bck-box-1 {
     border-color: rgb(215,73,12);
 }
@@ -750,7 +756,11 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     background-color: #f9d45f;
     padding: 0.5rem 1.5rem;
     text-align: center;
-    font-weight: bold
+    font-weight: bold;
+}
+.bck-box.bck-box-9 .bck-title p,
+.bck-box.bck-box-10 .bck-title p {
+    font-size: calc(var(--MainText) * 1.4);
 }
 .bck-box.bck-box-9 .bck-content,
 .bck-box.bck-box-10 .bck-content {
@@ -843,6 +853,9 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     background-repeat: round;
     padding: 0;
 }
+#actividad .bck-box-14 .bck-title p {
+
+}
 .bck-box.bck-box-14 p{
     margin-bottom: var(--MainLineHeight);
 }
@@ -858,6 +871,9 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
 .bck-box.bck-box-14 > .bck-title {
     font-family: 'Architects Daughter', cursive;
     padding: 10px 15px 10px 50px;
+}
+#actividad .bck-box-14 .bck-title p {
+    font-size: calc(var(--MainText) * 1.4);
 }
 .bck-box.bck-box-14 > .bck-content {
     padding: 0px 15px 15px 50px;
