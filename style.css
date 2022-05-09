@@ -1250,7 +1250,7 @@ body:not(.edit) .bck-flipbox-face.back {
     border: 0;
 }
 
-
+/* ---- RELACIONAR ----*/
 #actividad .workspace.matching .opciones .opcion.emparejado.destino {
     border-width: 2px 2px 2px 0
 }
@@ -1258,14 +1258,27 @@ body:not(.edit) .bck-flipbox-face.back {
 #actividad .workspace.matching .opciones .opcion.emparejado.origen {
     border-width: 2px 0 2px 2px
 }
-
+/*--- CLASIFICAR ----*/
 #actividad .workspace.clasificar .clasificar_lista .classify-item {
     border: 0 solid #d8d8d8
 }
-
 #actividad .workspace.clasificar .clasificar_conjuntos .conjunto .group-box {
     border: 2px solid rgb(var(--colorppal));
     padding-top: 10px
+}
+#actividad .workspace.clasificar .clasificar_lista .classify-item {
+    background-color: rgba(var(--colorppal),0.1);
+    padding-bottom: 0;
+}
+#actividad .workspace.clasificar .clasificar_lista .respuesta_over, 
+#actividad .workspace.clasificar .clasificar_lista .respuesta_checked {
+    background-color: rgba(var(--colorppal),0.1);
+    outline: 2px solid rgb(var(--colorppal));
+}
+/*----------------*/
+/*--- ORDENAR -----*/
+#actividad .workspace.ordenar .js-rank-item {
+    cursor: move;
 }
 
 .fillblanks-draggable-wrapper .response {
