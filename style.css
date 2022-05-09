@@ -1308,6 +1308,7 @@ body:not(.edit) .bck-flipbox-face.back {
     display: flex;
     align-items: center;
     line-height: 24px;
+    padding-left: 30px;
 }
 #actividad .workspace.test .solucion {
     border-bottom: 0;
