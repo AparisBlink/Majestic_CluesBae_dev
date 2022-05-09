@@ -1281,6 +1281,102 @@ body:not(.edit) .bck-flipbox-face.back {
 #actividad .workspace.ordenar .js-rank-item {
     cursor: move;
 }
+/*---*/
+/*--- SEÑALAR RESPUESTA ---*/
+#actividad .workspace.chooseblanks .inline-answer a {
+    border: 2px solid rgb(var(--TextColor));
+    padding: 0px 6px;
+    margin: 0 2px;
+    border-radius: 5px;
+    color: rgb(var(--TextColor));
+    text-decoration: none;
+}
+
+/*----- TEST --------*/
+
+.test .checkbox-option label.filter-label {
+    font-size: var(--NormalSize);
+}
+.workspace.test .checkbox-option input.filter-checkbox[type="checkbox"]+label.filter-label, 
+.workspace.test .radio-option input.filter-radio[type="radio"]+label.filter-label {
+    font-size: var(--NormalSize);
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+}
+#actividad .workspace.test .solucion {
+    border-bottom: 0;
+    color: var(--TextColor);
+}
+/*Damos formatos a los checkbox*/
+.test .checkbox-option label.filter-label::before,
+    .test .radio-option label.filter-label::before {
+    content: "";
+    background: none;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #CCCCCC;
+    border-radius: 3px;
+    line-height: 22px;
+}
+.test .checkbox-option input.filter-checkbox[type="checkbox"]:checked + label.filter-label::before,
+ .test .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::before {
+    border-color: rgb(var(--solution-color)); 
+    background-color: #ffffff;
+}
+.test .checkbox-option input.filter-checkbox[type="checkbox"]:checked + label.filter-label::after,
+.test .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::after {
+    content: "";
+    background-color: #047B9C;
+    width: 12px;
+    height: 12px;
+    top: 6px;
+    left: 6px;
+}
+.test .checkbox-option input.filter-checkbox[type="checkbox"]:checked + label.respuesta_ok.filter-label::before,
+.test .radio-option input.filter-radio[type="radio"]:checked + label.respuesta_ok.filter-label::before {
+    background-color: rgb(var(--ok-color));
+    border-color: rgb(var(--ok-color));
+}
+.test .checkbox-option input.filter-checkbox[type="checkbox"]:checked + label.respuesta_ok.filter-label::after,
+.test .radio-option input.filter-radio[type="radio"]:checked + label.respuesta_ok.filter-label::after {
+    content: "\f00c";
+    font-family: "FontAwesome";
+    color: #fff;
+    font-size: 15px;
+    background: none;
+    left: 5px;
+    top: 4px;
+}
+.test .checkbox-option input.filter-checkbox[type="checkbox"]:checked + label.respuesta_ko.filter-label::before,
+.test .radio-option input.filter-radio[type="radio"]:checked + label.respuesta_ko.filter-label::before {
+    background-color: rgb(var(--error-color));
+    border-color: rgb(var(--error-color));
+}
+.test .checkbox-option input.filter-checkbox[type="checkbox"]:checked + label.respuesta_ko.filter-label::after,
+.test .radio-option input.filter-radio[type="radio"]:checked + label.respuesta_ko.filter-label::after {
+    content: "\f00d";
+    font-family: "FontAwesome";
+    color: #fff;
+    font-size: 19px;
+    background: none;
+    left: 5px;
+    top: 2px;
+}
+.test .checkbox-option input.filter-checkbox[type="checkbox"]:checked + label.solucion.filter-label::before,
+ .test .radio-option input.filter-radio[type="radio"]:checked + label.solucion.filter-label::before {
+    border-color: #047B9C;
+    background-color: #047B9C;
+}
+.checkbox-option input.filter-checkbox[type="checkbox"]:disabled+label.filter-label:before,
+ .radio-option input.filter-radio[type="radio"]:disabled+label.filter-label:before {
+    opacity: 1;
+}
+/*----------*/
+
+
+
 
 .fillblanks-draggable-wrapper .response {
     border: 0 solid #d8d8d8;
