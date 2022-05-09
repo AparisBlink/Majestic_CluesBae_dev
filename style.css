@@ -1375,11 +1375,16 @@ body:not(.edit) .bck-flipbox-face.back {
 .test .radio-option input.filter-radio[type="radio"]:checked + label.respuesta_ko.filter-label::after {
     content: "\f00d";
     color: #fff;
+    left: 6px;
 }
 .test .checkbox-option input.filter-checkbox[type="checkbox"]:checked + label.solucion.filter-label::before,
  .test .radio-option input.filter-radio[type="radio"]:checked + label.solucion.filter-label::before {
     border-color: #00BDFF;
     background-color: #00BDFF;
+}
+.test .checkbox-option input.filter-checkbox[type="checkbox"]:checked + label.solucion.filter-label::after,
+.test .radio-option input.filter-radio[type="radio"]:checked + label.solucion.filter-label::after {
+    display: none;
 }
 .checkbox-option input.filter-checkbox[type="checkbox"]:disabled+label.filter-label:before,
  .radio-option input.filter-radio[type="radio"]:disabled+label.filter-label:before {
