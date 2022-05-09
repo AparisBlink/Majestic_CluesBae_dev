@@ -1332,6 +1332,7 @@ body:not(.edit) .bck-flipbox-face.back {
 }
 .test .checkbox-option input.filter-checkbox[type="checkbox"]:checked + label.filter-label::after,
 .test .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::after {
+    position: absolute;
     content: "";
     background-color: #047B9C;
     width: 12px;
