@@ -58,6 +58,11 @@ html body:not(.edit),
     padding: 0;
     border: 2px dashed rgb(var(--colorppal));
 }
+#indice a:hover,
+ #indice a:active,
+  #indice a:focus {
+      color: rgb(var(--colorppal));
+}
 #indice .units ul li a:not(.delete) {
     display: block;
     padding: 10px;
@@ -80,24 +85,6 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled) {
 body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title,
 body:not(.isTablet) #indice .units ul li:not(.disabled) a:hover .title {
     color: #ffffff;
-}
-
-#indice .units ul li.unittag_cuadernotrabajo_majestic {
-    background: rgb(var(--colorppal));
-    border: 2px dashed rgb(var(--colorppal));
-}
-#indice .units ul li.unittag_cuadernotrabajo_majestic a .title {
-    color:#ffffff;
-}
-#indice .units ul li.unittag_cuadernotrabajo_majestic.active:not(.disabled),
-#indice .units ul li.unittag_cuadernotrabajo_majestic:focus:not(.disabled),
-body:not(.isTablet) #indice .units ul li.unittag_cuadernotrabajo_majestic:hover:not(.disabled) {
-    background: none;
-    border: 2px solid rgb(var(--colorppal))
-}
-body:not(.isTablet) #indice .units ul li.unittag_cuadernotrabajo_majestic.active:not(.disabled) a .title,
-body:not(.isTablet) #indice .units ul li.unittag_cuadernotrabajo_majestic:not(.disabled) a:hover .title {
-    color: rgb(var(--colorppal));
 }
 
 
@@ -1588,55 +1575,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
 
 /*------*/
 /*----- AJUSTES cuando se añade imagen de fondo ----------*/
-#actividad .carousel-inner .item-container.aux-bckg .class_slide, #actividad .carousel-inner .item-container.aux-fullscreen.is-left .class_slide {
-    padding-left: 0;
-    padding-right: 0;
-}
 
-#actividad .carousel-inner .item-container.aux-fullscreen .class_slide, #actividad .carousel-inner .item-container.aux-bckg .class_slide {
-    padding-left: 0;
-    margin-left: 0;
-}
-
-#actividad .carousel-inner .item-container.aux-fullscreen.is-large .class_slide, #actividad .carousel-inner .item-container.aux-bckg.is-large .class_slide {
-    width: 50%;
-}
-
-#actividad .carousel-inner .item-container.aux-bckg.is-large .slide_main {
-    padding: 0 40px;
-}
-
-#actividad .carousel-inner .item-container.aux-bckg.is-large .header .title {
-    padding: 20px 40px;
-}
-
-#actividad .carousel-inner .item-container.aux-bckg.is-medium .slide_main {
-    padding: 0 40px;
-}
-
-#actividad .carousel-inner .item-container.aux-bckg.is-medium .header .title {
-    padding: 20px 40px;
-}
-
-#actividad .carousel-inner .item-container.aux-bckg.is-small .slide_main {
-    padding: 0 40px;
-}
-
-#actividad .carousel-inner .item-container.aux-bckg.is-small .header .title {
-    padding: 20px 40px;
-}
-
-#actividad .carousel-inner .item-container.aux-fullscreen.is-bottom .class_slide, #actividad .carousel-inner .item-container.aux-fullscreen.is-top .class_slide, #actividad .carousel-inner .item-container.aux-fullscreen.is-right .class_slide {
-    margin-left: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-@media screen and (max-width: 1023px) {
-    #actividad .carousel-inner .item-container.aux-fullscreen, #actividad .carousel-inner .item-container.aux-bckg {
-        padding-left: 0;
-    }
-}
 /*--*/
 /*------ AJUSTES EN EL NAVBAR -------*/
 #bottom-navigator li {
@@ -1678,7 +1617,6 @@ and (max-device-width : 480px) {
         display: none;
     }    
 }
-
 /*-------*/
 
 /*------ AJUSTES EN EL TOC -----*/
@@ -1686,9 +1624,162 @@ and (max-device-width : 480px) {
 #indice .unit-content .header {
     background-position: bottom;
 }
-
 /*-*/
 /*----*/
+
+/*-- Coursetags --*/
+.coursetag_clues_color2 {
+    --colorppal: 183, 40, 65; /*#00529B*/
+}
+.coursetag_clues_color3 {
+    --colorppal: 229, 31, 42; /*#00529B*/
+}
+.coursetag_clues_color4 {
+    --colorppal: 243, 111, 33; /*#F36F21*/
+}
+.coursetag_clues_color5 {
+    --colorppal: 0, 133, 63; /*#00853F*/
+}
+.coursetag_clues_color6 {
+    --colorppal: 189, 52, 86; /*#BD3456*/
+}
+.coursetag_clues_color7 {
+    --colorppal: 0, 173, 238; /*#00ADEE*/
+}
+.coursetag_clues_color8 {
+    --colorppal: 0, 171, 77; /*#00AB4D*/
+}
+.coursetag_clues_color9 {
+    --colorppal: 254, 184, 17; /*#FEB811*/
+}
+.coursetag_clues_color10 {
+    --colorppal: 115, 101, 167; /*#7365A7*/
+}
+.coursetag_clues_color11 {
+    --colorppal: 205, 74, 139; /*#CD4A8B*/
+}
+.coursetag_clues_color12 {
+    --colorppal: 204, 102, 102; /*#CC6666*/
+}
+.coursetag_clues_color13 {
+    --colorppal: 51, 102, 153; /*#336699*/
+}
+.coursetag_clues_color14 {
+    --colorppal: 153, 204, 51; /*#99CC33*/
+}
+.coursetag_clues_color15 {
+    --colorppal: 51, 153, 153; /*#339999*/
+}
+.coursetag_clues_color16 {
+    --colorppal: 153, 102, 153; /*#996699*/
+}
+.coursetag_clues_color17 {
+    --colorppal: 237, 3, 114; /*#ED0372*/
+}
+.coursetag_clues_color18 {
+    --colorppal: 233, 68, 60; /*#E9443C*/
+}
+.coursetag_clues_color19 {
+    --colorppal: 139, 197, 62; /*#8BC53E*/
+}
+.coursetag_clues_color20 {
+    --colorppal: 115, 101, 167; /*#7365A7*/
+}
+.coursetag_clues_color21 {
+    --colorppal: 3, 70, 127; /*#03467F*/
+}
+.coursetag_clues_color22 {
+    --colorppal: 0, 156, 165; /*#009CA5*/
+}
+.coursetag_clues_color23 {
+    --colorppal: 189, 52, 86; /*#BD3456*/
+}
+.coursetag_clues_color24 {
+    --colorppal: 115, 101, 167; /*#7365A7*/
+}
+.coursetag_clues_color25 {
+    --colorppal: 243, 110, 32; /*#F36E20*/
+}
+.coursetag_clues_color26 {
+    --colorppal: 189, 52, 86; /*#BD3456*/
+}
+.coursetag_clues_color27 {
+    --colorppal: 109, 190, 97; /*#6DBE61*/
+}
+.coursetag_clues_color28 {
+    --colorppal: 0, 114, 189; /*#0072BD*/
+}
+.coursetag_clues_color29 {
+    --colorppal: 86, 89, 129; /*#565981*/
+}
+.coursetag_clues_color30 {
+    --colorppal: 37, 146, 179; /*#2592B3*/
+}
+.coursetag_clues_color31 {
+    --colorppal: 115, 101, 166; /*#7365A6*/
+}
+.coursetag_clues_color32 {
+    --colorppal: 242, 183, 58; /*#F2B73A*/
+}
+.coursetag_clues_color33 {
+    --colorppal: 242, 183, 58; /*#53628B*/
+}
+.coursetag_clues_color34 {
+    --colorppal: 208, 100, 115; /*#D06473*/
+}
+.coursetag_clues_color35 {
+    --colorppal: 42, 135, 72; /*#2A8748*/
+}
+.coursetag_clues_color36 {
+    --colorppal: 133, 16, 59; /*#85103B*/
+}
+.coursetag_clues_color37 {
+    --colorppal: 133, 16, 59; /*#7365A7*/
+}
+.coursetag_clues_color38 {
+    --colorppal: 133, 16, 59; /*#0070B2*/
+}
+.coursetag_clues_color39 {
+    --colorppal: 133, 16, 59; /*#B0CF34*/
+}
+.coursetag_clues_color40 {
+    --colorppal: 133, 16, 59; /*#007C37*/
+}
+.coursetag_clues_color41 {
+    --colorppal: 133, 16, 57; /*#851039*/
+}
+.coursetag_clues_color42 {
+    --colorppal: 239, 90, 91; /*#EF5A5B*/
+}
+.coursetag_clues_color43 {
+    --colorppal: 0, 121, 58; /*#00793A*/
+}
+.coursetag_clues_color44 {
+    --colorppal: 1, 46, 79; /*#012E4F*/
+}
+.coursetag_clues_color45 {
+    --colorppal: 0, 141, 120; /*#008D78*/
+}
+.coursetag_clues_color46 {
+    --colorppal: 15, 94, 151; /*#0F5E97*/
+}
+.coursetag_clues_color47 {
+    --colorppal: 74, 86, 117; /*#4A5675*/
+}
+.coursetag_clues_color48 {
+    --colorppal: 210, 113, 159; /*#D2719F*/
+}
+.coursetag_clues_color49 {
+    --colorppal: 112, 179, 227; /*#70B3E3*/
+}
+.coursetag_clues_color50 {
+    --colorppal: 135, 122, 179; /*#877AB3*/
+}
+
+
+
+
+
 
 /*------- coursetag_BAE_majestic --------*/
 .coursetag_bae_majestic  #actividad .content .header .title {
@@ -1709,4 +1800,24 @@ and (max-device-width : 480px) {
     height: 35px !important;
     width: 35px;
     vertical-align: middle;
+}
+
+/*------------- Unittags ------------------*/
+/*---- unittag_cuadernotrabajo_majestic -----*/
+#indice .units ul li.unittag_cuadernotrabajo_majestic {
+    background: rgb(var(--colorppal));
+    border: 2px dashed rgb(var(--colorppal));
+}
+#indice .units ul li.unittag_cuadernotrabajo_majestic a .title {
+    color:#ffffff;
+}
+#indice .units ul li.unittag_cuadernotrabajo_majestic.active:not(.disabled),
+#indice .units ul li.unittag_cuadernotrabajo_majestic:focus:not(.disabled),
+body:not(.isTablet) #indice .units ul li.unittag_cuadernotrabajo_majestic:hover:not(.disabled) {
+    background: none;
+    border: 2px solid rgb(var(--colorppal))
+}
+body:not(.isTablet) #indice .units ul li.unittag_cuadernotrabajo_majestic.active:not(.disabled) a .title,
+body:not(.isTablet) #indice .units ul li.unittag_cuadernotrabajo_majestic:not(.disabled) a:hover .title {
+    color: rgb(var(--colorppal));
 }
