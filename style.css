@@ -82,15 +82,22 @@ body:not(.isTablet) #indice .units ul li:not(.disabled) a:hover .title {
     color: #ffffff;
 }
 
+#indice .units ul li.unittag_cuadernotrabajo_majestic {
+    background: rgb(var(--colorppal));
+    border: 2px dashed rgb(var(--colorppal));
+}
+#indice .units ul li.unittag_cuadernotrabajo_majestic a .title {
+    color:#ffffff;
+}
 #indice .units ul li.unittag_cuadernotrabajo_majestic.active:not(.disabled),
 #indice .units ul li.unittag_cuadernotrabajo_majestic:focus:not(.disabled),
 body:not(.isTablet) #indice .units ul li.unittag_cuadernotrabajo_majestic:hover:not(.disabled) {
-    background: rgb(var(--colorppal));
+    background: none;
     border: 2px solid rgb(var(--colorppal))
 }
 body:not(.isTablet) #indice .units ul li.unittag_cuadernotrabajo_majestic.active:not(.disabled) a .title,
 body:not(.isTablet) #indice .units ul li.unittag_cuadernotrabajo_majestic:not(.disabled) a:hover .title {
-    color: #ffffff;
+    color: rgb(var(--colorppal));
 }
 
 
