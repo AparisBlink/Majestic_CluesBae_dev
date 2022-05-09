@@ -1071,20 +1071,20 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box.bck-b
     font-weight: 700
 }
 .info-template .info-icon {
-    color: rgb(var(--TextColor))
+    color: rgb(var(--TextColor));
 }
-.info-popover .popover-title
+.info-popover .popover-title,
 .popover-template .popover-title {
     color: rgb(var(--TextColor));
     font-weight: 700;
     font-size: var(--MainText);
     padding: 1.0rem 1.5rem;
 }
-.fa-info:before,
 .info-popover .popover-title:before,
-.popover-template .popover-title:before {
-
+ .popover-template .popover-title:before {
+     display: none;
 }
+
 .info-popover .popover-content,
  .popover-template .popover-content {
     padding: 1.0rem 1.5rem;
