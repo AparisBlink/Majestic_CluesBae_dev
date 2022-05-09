@@ -1222,6 +1222,22 @@ body:not(.edit) .bck-flipbox-face.back {
 
 /*----------------------------------*/
 /*------- PLANTILLAS -----------------*/
+/*--- RELLENAR ESPACIOS ----*/
+.fillblanks-draggable-wrapper .response {
+    cursor: move;
+    border: 0 solid #d8d8d8;
+    background: #f5e6e6
+}
+.fillblanks-draggable-wrapper .response .bck-i-fullscreen-wrapper {
+    padding: 0
+}
+body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-draggable-wrapper .response .bck-i-fullscreen,
+body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-draggable .img-input-container.imgFilled img {
+    width: auto;
+    height: 100px!important;
+    padding: 0
+}
+/*------*/
 
 /*--- Verdadero y falso -----*/
 .true-false .checkbox-option label.filter-label {
@@ -1468,21 +1484,6 @@ body:not(.edit) .bck-flipbox-face.back {
 
 
 
-.fillblanks-draggable-wrapper .response {
-    border: 0 solid #d8d8d8;
-    background: #f5e6e6
-}
-
-.fillblanks-draggable-wrapper .response .bck-i-fullscreen-wrapper {
-    padding: 0
-}
-
-body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-draggable-wrapper .response .bck-i-fullscreen,
-body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-draggable .img-input-container.imgFilled img {
-    width: auto;
-    height: 100px!important;
-    padding: 0
-}
 
 .slide.crosswords-puzzle .enunciado,.slide.crosswords .enunciados .enunciado {
     padding: 0;
