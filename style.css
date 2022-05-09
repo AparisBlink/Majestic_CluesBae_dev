@@ -1393,6 +1393,9 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
     color: rgb(var(--TextColor));
     text-decoration: none;
 }
+#actividad .workspace.chooseblanks .respuesta_ok {
+    opacity: 1;
+}
 
 /*----- TEST --------*/
 
