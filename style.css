@@ -1310,6 +1310,12 @@ body:not(.edit) .bck-flipbox-face.back {
     line-height: 24px;
     padding-left: 30px;
 }
+#actividad .workspace.test .respuesta_ok {
+    border-bottom: 0;
+}
+#actividad .workspace.test .respuesta_ko {
+    border-bottom: 0;
+}
 #actividad .workspace.test .solucion {
     border-bottom: 0;
     color: var(--TextColor);
