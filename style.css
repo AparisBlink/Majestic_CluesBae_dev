@@ -473,10 +473,10 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     border-radius: 50%;
     background: transparent;
     color: #333;
-    font-size: 2rem;
+    font-size: var(--MainText);
     font-weight: 700;
     text-align: center;
-    line-height: calc(var(--MainLineHeight) / 1.3);
+    line-height: var(--MainLineHeight);
 }
 .cke_contents .bck-ol-1 li:before,
 .content .bck-ol-1 li:before {
