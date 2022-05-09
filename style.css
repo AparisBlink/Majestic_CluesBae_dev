@@ -942,6 +942,8 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
 .bck-box.bck-box-19 > .bck-content {
     border: 0;
     border-radius: 20px;
+    width: -moz-fit-content;
+    width: fit-content;
     overflow: hidden;
 }
 .bck-box.bck-box-19 > .bck-content .bck-i-fullscreen-wrapper {
@@ -1371,8 +1373,8 @@ body:not(.edit) .bck-flipbox-face.back {
 }
 .test .checkbox-option input.filter-checkbox[type="checkbox"]:checked + label.solucion.filter-label::before,
  .test .radio-option input.filter-radio[type="radio"]:checked + label.solucion.filter-label::before {
-    border-color: #047B9C;
-    background-color: #047B9C;
+    border-color: #00BDFF;
+    background-color: #00BDFF;
 }
 .checkbox-option input.filter-checkbox[type="checkbox"]:disabled+label.filter-label:before,
  .radio-option input.filter-radio[type="radio"]:disabled+label.filter-label:before {
