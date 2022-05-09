@@ -1091,6 +1091,11 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box.bck-b
 }
 
 /*--- Tooltip---*/
+.bck-tooltip {
+    background-color: rgba(var(--colorppal),0.2);
+    padding: 0 5px;
+    border-radius: 3px;
+}
 .popover .popover-title {
     font-size: calc(var(--MainText) / 1.2);
     font-weight: bold;
