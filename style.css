@@ -1267,6 +1267,7 @@ body:not(.edit) .bck-flipbox-face.back {
     padding-top: 10px
 }
 #actividad .workspace.clasificar .clasificar_lista .classify-item {
+    cursor: move;
     background-color: rgba(var(--colorppal),0.1);
     padding: 10px;
 }
