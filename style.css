@@ -180,7 +180,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     margin: 0;
     padding:0;
     color: #fff;
-    font-family: var(--TitleFont);
+    font-family: var(--MainFont);
     font-size: calc(var(--MainText) * 1.44);
     font-weight: bold;
     text-align: left
@@ -1800,13 +1800,19 @@ and (max-device-width : 480px) {
 
 
 
+
+
+
 /*------- coursetag_BAE_majestic --------*/
+.coursetag_bae_majestic  {
+    --colorppal:
+}
 .coursetag_bae_majestic  #actividad .content .header .title {
     border-radius: 0px 0px 30px 30px;
     width: fit-content;
     width: -moz-fit-content;
 }
-.content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title h3 {
+.coursetag_bae_majestic .content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title h3 {
     font-family: var(--TitleFontBAE);
 }
 .coursetag_bae_majestic #actividad .player.audio,
