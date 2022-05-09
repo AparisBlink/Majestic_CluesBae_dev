@@ -1268,7 +1268,7 @@ body:not(.edit) .bck-flipbox-face.back {
 }
 #actividad .workspace.clasificar .clasificar_lista .classify-item {
     background-color: rgba(var(--colorppal),0.1);
-    padding-bottom: 0;
+    padding: 10px;
 }
 #actividad .workspace.clasificar .clasificar_lista .respuesta_over, 
 #actividad .workspace.clasificar .clasificar_lista .respuesta_checked {
