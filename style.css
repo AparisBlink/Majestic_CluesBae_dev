@@ -117,6 +117,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 }
 
 #actividad .carousel-inner .item-container {
+    max-width: 1100px;
     margin: 20px auto
 }
 
