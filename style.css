@@ -1352,18 +1352,19 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
 #actividad .markword-solution {
     line-height: var(--MainLineHeight) !important;
     padding: 0 4px !important;
-    border: 2px solid rgb(35,31, 32) !important;
+    border: 0;
+    outline: 2px solid rgb(35,31, 32) !important;
     border-radius: 5px !important;
     color: rgb(35,31, 32) !important;
 }
 #actividad .markword-correct {
-    border-color: #57e900 !important;
+    outline-color: #57e900 !important;
 }
 #actividad .markword-false {
-    border-color: #ff3626 !important;
+    outline-color: #ff3626 !important;
 }
 #actividad .markword-solution {
-    border-color: transparent !important;
+    outline-color: transparent !important;
 }
 
 #actividad .workspace.matching .opciones .opcion:not(.ko):not(.ok),
