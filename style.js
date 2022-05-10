@@ -31,6 +31,7 @@
 				{ name: 'E.02', element: 'span', attributes: { 'class': 'bck-enfasis-2'} },
 				{ name: 'E.03', element: 'span', attributes: { 'class': 'bck-enfasis-3'} },
 				{ name: 'E.04', element: 'span', attributes: { 'class': 'bck-enfasis-4'} },
+				{ name: 'E.05', element: 'span', attributes: { 'class': 'bck-enfasis-5'} },
 				
 
 				{ name: 'Pa.01 Enunciados', element: 'p', attributes: { 'class': 'bck-p-1'} },
