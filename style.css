@@ -398,11 +398,12 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 }
 .bck-title-9,
 .bck-title-10 {
+    font-family: var(--TitleFontBAE);
+    font-size: calc(var(--MainText) * 1.4); /*25px*/
     display: inline-block;
     background-color: rgb(var(--color2BAE));
     color: rgb(var(--colorppal));
     font-weight: bold;
-    font-family: var(--TitleFontBAE);
     padding: 5px 35px;
     box-shadow: 0px 5px 14px 0px #00000030;
 }
@@ -628,13 +629,13 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 #actividad .bck-box .bck-title p {
     font-size: calc(var(--MainText) * 1.1);
 }
-.bck-box .bck-title p:last-child {
+#actividad .bck-box .bck-title p:last-child {
     margin-bottom: 0;
 }
-.bck-box .bck-content p:last-child {
+#actividad .bck-box .bck-content p:last-child {
     margin-bottom: 0;
 }
-.bck-box-1 {
+#actividad .bck-box-1 {
     border-color: rgb(215,73,12);
 }
 :not(.edit).bck-box.bck-box-2 {
@@ -650,12 +651,12 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img {
     padding: 0;
 }
-.bck-box.bck-box-3 {
+#actividad .bck-box.bck-box-3 {
     border: 0;
     border-radius: 0;
     padding: 0;
 }
-.bck-box.bck-box-3 .bck-title {
+#actividad .bck-box.bck-box-3 > .bck-title {
     background-color: rgb(var(--color2BAE));
     display: inline-block;
     font-family: var(--TitleFontBAE);
@@ -665,28 +666,28 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     margin-left: 3.0rem;
     box-shadow: 0px 10px 8px 0px #00000030;
 }
-.bck-box.bck-box-3 .bck-content {
+#actividad .bck-box.bck-box-3 > .bck-content {
     background-color: rgba(var(--color2BAE),0.5);
     padding: 1.5rem;
 }
-.bck-box.bck-box-4 {
+#actividad .bck-box.bck-box-4 {
     border: 0;
     border-radius: 0;
     background-color: rgba(var(--colorppal), 0.2);
 }
 
-.bck-box.bck-box-5,
-.bck-box.bck-box-6,
-.bck-box.bck-box-7,
-.bck-box.bck-box-8 {
+#actividad .bck-box.bck-box-5,
+#actividad .bck-box.bck-box-6,
+#actividad .bck-box.bck-box-7,
+#actividad .bck-box.bck-box-8 {
     border: 0;
     border-radius: 0;
     padding: 0;
 }
-.bck-box.bck-box-5 .bck-title, 
-.bck-box.bck-box-6 .bck-title,
-.bck-box.bck-box-7 .bck-title,
-.bck-box.bck-box-8 .bck-title {
+#actividad .bck-box.bck-box-5 > .bck-title, 
+#actividad .bck-box.bck-box-6 > .bck-title,
+#actividad .bck-box.bck-box-7 > .bck-title,
+#actividad .bck-box.bck-box-8 > .bck-title {
     display: inline-block;
     background: linear-gradient(90deg, rgba(255,255,255,1) -39%, rgba(249,166,82,1) 0%, rgba(209,31,53,1) 100%);
     padding: 0.5rem 1.5rem 0.5rem 9.0rem;
@@ -697,10 +698,10 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     border-radius: 20px 20px 0px 0px;
     position: relative;
 }
-.bck-box.bck-box-5 .bck-title:before,
-.bck-box.bck-box-6 .bck-title:before,
-.bck-box.bck-box-7 .bck-title:before,
-.bck-box.bck-box-8 .bck-title:before {
+#actividad .bck-box.bck-box-5 > .bck-title:before,
+#actividad .bck-box.bck-box-6 > .bck-title:before,
+#actividad .bck-box.bck-box-7 > .bck-title:before,
+#actividad .bck-box.bck-box-8 > .bck-title:before {
     content: "";
     position: absolute;
     background-image: url(images/icono_learnmore.png);
@@ -712,64 +713,64 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     left: 0.7rem;
     top: -1.2rem;
 }
-.bck-box.bck-box-5 .bck-content,
-.bck-box.bck-box-6 .bck-content,
-.bck-box.bck-box-7 .bck-content, 
-.bck-box.bck-box-8 .bck-content {
+#actividad .bck-box.bck-box-5 > .bck-content,
+#actividad .bck-box.bck-box-6 > .bck-content,
+#actividad .bck-box.bck-box-7 > .bck-content, 
+#actividad .bck-box.bck-box-8 > .bck-content {
     padding: 15px;
     background-color: rgb(var(--color2BAE));
 }
 
-.bck-box.bck-box-5 .bck-title {
+#actividad .bck-box.bck-box-5 > .bck-title {
     background: linear-gradient(90deg, rgba(255,255,255,1) -39%, rgba(249,166,82,1) 0%, rgba(209,31,53,1) 100%);
 }
-.bck-box.bck-box-5 .bck-title:before {
+#actividad .bck-box.bck-box-5 > .bck-title:before {
     background-image: url(images/icono_learnmore.png);
 }
 
-.bck-box.bck-box-6 .bck-title {
+#actividad .bck-box.bck-box-6 > .bck-title {
     background: linear-gradient(90deg, rgba(255,255,255,1) -39%, rgba(108,173,206,1) 0%, rgba(15,78,140,1) 100%);
 }
-.bck-box.bck-box-6 .bck-title:before {
+#actividad .bck-box.bck-box-6 > .bck-title:before {
     background-image: url(images/icono_everyday_language.png);
 }
 
-.bck-box.bck-box-7 .bck-title {
+#actividad .bck-box.bck-box-7 > .bck-title {
     background: linear-gradient(90deg, rgba(255,255,255,1) -39%, rgba(102,195,199,1) 0%, rgba(0,172,109,1) 100%);
 }
-.bck-box.bck-box-7 .bck-title:before {
+#actividad .bck-box.bck-box-7 > .bck-title:before {
     background-image: url(images/icono_multiculturalism.png);
 }
 
-.bck-box.bck-box-8 .bck-title {
+#actividad .bck-box.bck-box-8 > .bck-title {
     background: linear-gradient(90deg, rgba(255,255,255,1) -39%, rgba(230,156,174,1) 0%, rgba(111,44,145,1) 100%);
 }
-.bck-box.bck-box-8 .bck-title:before {
+#actividad .bck-box.bck-box-8 > .bck-title:before {
     background-image: url(images/icono_studySkills.png);
 }
 
 /*CAJAS POST-IT----*/
-.bck-box.bck-box-9,
-.bck-box.bck-box-10 {
+#actividad .bck-box.bck-box-9,
+#actividad .bck-box.bck-box-10 {
     border: 0;
     border-radius: 0;
     padding: 0;
     max-width: 400px;
 }
-#actividad .bck-box.bck-box-9 .bck-title,
-#actividad .bck-box.bck-box-10 .bck-title {
+#actividad .bck-box.bck-box-9 > .bck-title,
+#actividad .bck-box.bck-box-10 > .bck-title {
     font-family: 'Architects Daughter', cursive;
     background-color: #f9d45f;
     padding: 0.5rem 1.5rem;
     text-align: center;
     font-weight: bold;
 }
-.bck-box.bck-box-9 .bck-title p,
-.bck-box.bck-box-10 .bck-title p {
+#actividad .bck-box.bck-box-9 > .bck-title p,
+#actividad .bck-box.bck-box-10 > .bck-title p {
     font-size: calc(var(--MainText) * 1.4);
 }
-.bck-box.bck-box-9 .bck-content,
-.bck-box.bck-box-10 .bck-content {
+#actividad .bck-box.bck-box-9 > .bck-content,
+#actividad .bck-box.bck-box-10 > .bck-content {
     padding: 1.0rem;
     text-align:center;     
     min: height 150px;
@@ -781,8 +782,8 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     background: -webkit-linear-gradient(-45deg, #FCDD7B 81%,#FCDD7B 82%,#FCDD7B 82%,#ffefba 100%);
     background: linear-gradient(135deg, #FCDD7B 81%,#FCDD7B 82%,#FCDD7B 82%,#ffefba 100%);
   }
-  .bck-box.bck-box-9 .bck-content:after,
-  .bck-box.bck-box-10 .bck-content:after {
+  #actividad .bck-box.bck-box-9 > .bck-content:after,
+  #actividad .bck-box.bck-box-10 > .bck-content:after {
     content: "";
     position:absolute;
     z-index:-1;
@@ -795,26 +796,26 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     transform: matrix(-1, -0.1, 0, 1, 0, 0);  
   }
   
-.bck-box.bck-box-10 .bck-title {
+#actividad .bck-box.bck-box-10 > .bck-title {
     background-color: #A2D077;
 }
-.bck-box.bck-box-10 .bck-content {   
+#actividad .bck-box.bck-box-10 > .bck-content {   
     background: #FCDD7B;
     background: -webkit-linear-gradient(-45deg, #B0D57A 81%,#B0D57A 82%,#B0D57A 82%,#ebffcd 100%);
     background: linear-gradient(135deg, #B0D57A 81%,#B0D57A 82%,#B0D57A 82%,#ebffcd 100%);
 }
 /*--*/
-.bck-box.bck-box-11 {
+#actividad .bck-box.bck-box-11 {
     border: 0;
     border-radius: 0;
     background-color: #CEEBE9;
     padding-bottom: 35px;
     margin-bottom: 25px;
 }
-.bck-box.bck-box-11 .bck-title {
+#actividad .bck-box.bck-box-11 > .bck-title {
     font-weight: bold;
 }
-.bck-box.bck-box-11:after {
+#actividad .bck-box.bck-box-11:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -827,8 +828,8 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
 }
 
 /*Cajas dialogos*/
-.bck-box.bck-box-12,
-.bck-box.bck-box-13 {
+#actividad .bck-box.bck-box-12,
+#actividad .bck-box.bck-box-13 {
     background-color: #ffffff;
     border-color: #58A7DC;
     padding-bottom: 30px;
@@ -851,7 +852,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     right: 0;
     left: 70px;
 }
-.bck-box.bck-box-14 {
+#actividad .bck-box.bck-box-14 {
     border: 0;
     border-radius: 0;
     background-image: url(images/papel_arrugado.jpg);
@@ -859,10 +860,10 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     background-repeat: round;
     padding: 0;
 }
-.bck-box.bck-box-14 p{
+#actividad .bck-box.bck-box-14 p{
     margin-bottom: var(--MainLineHeight);
 }
-.bck-box.bck-box-14:before {
+#actividad .bck-box.bck-box-14:before {
     content: "";
     position: absolute;
     width: 2px;
@@ -871,19 +872,19 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     left: 35px;
     background: #E17B6D;
 }
-.bck-box.bck-box-14 > .bck-title {
+#actividad .bck-box.bck-box-14 > .bck-title {
     font-family: 'Architects Daughter', cursive;
     padding: 10px 15px 10px 50px;
 }
 #actividad .bck-box-14 .bck-title p {
     font-size: calc(var(--MainText) * 1.4);
 }
-.bck-box.bck-box-14 > .bck-content {
+#actividad .bck-box.bck-box-14 > .bck-content {
     padding: 0px 15px 15px 50px;
     background-image: repeating-linear-gradient(to bottom, transparent, transparent 24px, #60ABDD var(--MainLineHeight));
 }
 
-.bck-box.bck-box-15 {
+#actividad .bck-box.bck-box-15 {
     background-color: #FBF9EE;
     border: 0;
     border-radius: 0;
@@ -895,7 +896,8 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     box-shadow: 1px 2px 3px #0000003b;
     transform: rotate(-1deg);
 }
-.bck-box.bck-box-15:before, .bck-box.bck-box-15:after {
+#actividad .bck-box.bck-box-15:before,
+#actividad .bck-box.bck-box-15:after {
     content: "";
     position: absolute;
     width: 50%;
@@ -906,18 +908,18 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     background: url(images/papel_arrugado.jpg);
     opacity: 0.6;
 }
-.bck-box.bck-box-15:after {
+#actividad .bck-box.bck-box-15:after {
     background: #FBC0A0;
     mix-blend-mode: multiply;
 }
 
-.bck-box.bck-box-16 {
+#actividad .bck-box.bck-box-16 {
     border-radius: 0;
     border: 0;
     box-shadow: 2px 2px 6px #0000005c;
     padding-left: 35px;
 }
-.bck-box.bck-box-16:before {
+#actividad .bck-box.bck-box-16:before {
     content: "";
     position: absolute;
     width: 25px;
@@ -928,7 +930,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     border-right: 7px double #ffffff;
 }
 
-.bck-box.bck-box-17 {
+#actividad .bck-box.bck-box-17 {
     border: 0;
     border-radius: 0;
     z-index: 1;
@@ -938,7 +940,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     margin-top: 50px;
     box-shadow: 4px 0px 7px 1px #0000006b;
 }
-.bck-box-17:before {
+#actividad .bck-box-17:before {
     content: "";
     background-image: url(images/icono_franjas_colores.png);
     position: absolute;
@@ -951,17 +953,17 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     filter: drop-shadow(0px -3px 6px #A9A9A9);
 }
 
-.bck-box.bck-box-18 {
+#actividad .bck-box.bck-box-18 {
     border-color: rgb(var(--color2BAE));
     border-radius: 0;
 }
 
-.bck-box.bck-box-19 {
+#actividad .bck-box.bck-box-19 {
     padding: 0;
     border: 0;
     margin-top: 40px;
 }
-.bck-box.bck-box-19 > .bck-title {
+#actividad .bck-box.bck-box-19 > .bck-title {
     position: absolute;
     border: 2px solid rgb(var(--colorppal));
     padding: 5px 10px;
@@ -970,14 +972,14 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     z-index: 2;
     background-color: #ffffff;
 }
-.bck-box.bck-box-19 > .bck-content {
+#actividad .bck-box.bck-box-19 > .bck-content {
     border: 0;
     border-radius: 20px;
     width: -moz-fit-content;
     width: fit-content;
     overflow: hidden;
 }
-.bck-box.bck-box-19 > .bck-content .bck-i-fullscreen-wrapper {
+#actividad .bck-box.bck-box-19 > .bck-content .bck-i-fullscreen-wrapper {
     padding: 0;
 }
 body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box.bck-box-19 > .bck-content img {
