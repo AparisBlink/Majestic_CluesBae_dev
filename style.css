@@ -204,10 +204,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 .texto_curso p:last-of-type {
     margin-bottom: 0
 }
-.content_type_clase_Majestic_CluesBae_dev #actividad .texto_curso li,
-.content_type_clase_Majestic_CluesBae_dev #actividad .workspace ul li li {
-    margin-bottom: 10px
-}
+
 #actividad .class_slide {
     padding-top: 0
 }
@@ -442,6 +439,11 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     padding-left: 0;
     counter-reset: bck-li-counter
 }
+.content_type_clase_Majestic_CluesBae_dev #actividad .texto_curso li,
+.content_type_clase_Majestic_CluesBae_dev #actividad .workspace ul li li {
+    line-height: var(--MainLineHeight) !important;
+    margin-bottom: 10px
+}
 .cke_contents .bck-ol li,
 .cke_contents ol li,
 .content .bck-ol li,
@@ -451,7 +453,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     margin-bottom: 16px;
     counter-increment: bck-li-counter;
     position: relative;
-    line-height: 1.1rem
+    line-height: var(--MainLineHeight);
 }
 .cke_contents .bck-ol li:before,
 .cke_contents ol li:before,
@@ -853,9 +855,6 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     background-repeat: round;
     padding: 0;
 }
-#actividad .bck-box-14 .bck-title p {
-
-}
 .bck-box.bck-box-14 p{
     margin-bottom: var(--MainLineHeight);
 }
@@ -1097,6 +1096,8 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box.bck-b
     background: #fff
 }
 .info-template .info-title.shown {
+    font-size: calc(var(--MainText) / 1.1);
+    line-height: calc(var(--MainLineHeight) / 1.1);
     color: rgb(var(--TextColor));
     font-weight: 700
 }
@@ -1229,7 +1230,6 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box.bck-b
 .icon .icon-parejas {
     background-image: url(images/icono_parejas.png);
 }
-
 
 body:not(.edit) .front .bck-flipbox-section,body:not(.edit) .front .bck-flipbox-title {
     color: rgb(var(--TextColor));
@@ -1432,7 +1432,6 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
 }
 
 /*----- TEST --------*/
-
 .test .checkbox-option label.filter-label {
     font-size: var(--MainText);
 }
