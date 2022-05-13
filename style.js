@@ -32,6 +32,7 @@
 				{ name: 'E.03', element: 'span', attributes: { 'class': 'bck-enfasis-3'} },
 				{ name: 'E.04', element: 'span', attributes: { 'class': 'bck-enfasis-4'} },
 				{ name: 'E.05', element: 'span', attributes: { 'class': 'bck-enfasis-5'} },
+				{ name: 'E.06', element: 'span', attributes: { 'class': 'bck-enfasis-6'} },
 				
 
 				{ name: 'Pa.01 Enunciados', element: 'p', attributes: { 'class': 'bck-p-1'} },
@@ -80,6 +81,7 @@
 				{ name: 'Caja 18', type: 'widget', widget: 'blink_box', attributes: { 'class': 'bck-box bck-box-18' } },
 				{ name: 'Caja 19', type: 'widget', widget: 'blink_box', attributes: { 'class': 'bck-box bck-box-19' } },
 				{ name: 'Caja 20', type: 'widget', widget: 'blink_box', attributes: { 'class': 'bck-box bck-box-20' } },
+				{ name: 'Caja 21', type: 'widget', widget: 'blink_box', attributes: { 'class': 'bck-box bck-box-21' } },
 
 
 				{ name: 'Tabla 01', element: 'table', type: 'bck-stack-class', attributes: { 'class': 'bck-table bck-table-1'} },
