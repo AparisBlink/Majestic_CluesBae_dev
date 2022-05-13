@@ -500,7 +500,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 }
 .cke_contents .bck-ol-4 li:before,
 .content .bck-ol-4 li:before {
-    color: green;
+    color: rgb(35,31,32);
 }
 .cke_contents .bck-ol-5 li:before,
 .content .bck-ol-5 li:before,
@@ -525,11 +525,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 }
 .cke_contents .bck-ol-8 li:before,
 .content .bck-ol-8 li:before {
-    color: green;
-}
-.cke_contents .bck-ol-15 li:before,
-.content .bck-ol-15 li:before {
-    color: rgb(var(--TextColor));
+    color: rgb(35,31,32);
 }
 
 .cke_contents .bck-ol-9 li:before,
@@ -555,12 +551,9 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 }
 .cke_contents .bck-ol-12 li:before,
 .content .bck-ol-12 li:before {
-    color: green;
+    color: rgb(35,31,32);
 }
-.cke_contents .bck-ol-16 li:before,
-.content .bck-ol-16 li:before {
-    color: rgb(var(--TextColor));
-}
+
 
 .cke_contents .bck-ol-13 li:before,
 .content .bck-ol-13 li:before,
@@ -612,7 +605,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 .cke_contents .bck-ul-4 li:before,
  .texto_curso .bck-ul-4 li:before,
   .workspace ul li .bck-ul-4 li:before {
-    background-color: green;
+    background-color: rgb(35,31,32);
 }
 /*----------------------------------*/
 /*------------- CAJAS --------------*/
