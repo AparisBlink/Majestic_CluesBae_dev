@@ -1802,6 +1802,15 @@ and (max-device-width : 480px) {
     vertical-align: middle;
 }
 /*--- Secciones ---*/
+    .coursetag_bae_majestic #actividad .content .Actividades .header {
+        background-image: radial-gradient(#ffffff82 10%, transparent 11%), radial-gradient(#ffffff82 10%, transparent 11%);
+        background-size: 50px 50px;
+        background-position: 0 0, 30px 30px;
+        background-repeat: repeat;
+    }
+    .coursetag_bae_majestic #actividad .content .Actividades .header:after {
+        background-color: #EADFC5;
+    }
     .coursetag_bae_majestic #actividad .content .Actividades .header .title {
         background-image: radial-gradient(rgba(var(--color2BAE), 0.5) 10%, transparent 11%),
             radial-gradient(rgba(var(--color2BAE), 0.5) 10%, transparent 11%);
@@ -1812,6 +1821,7 @@ and (max-device-width : 480px) {
     .coursetag_bae_majestic #actividad .content .Actividades .header .title h3 {
         background-color: rgb(var(--colorppal));
     }
+    
 
 /*------------- Unittags ------------------*/
 /*---- unittag_cuadernotrabajo_majestic -----*/
