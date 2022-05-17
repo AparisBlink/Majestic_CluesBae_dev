@@ -990,7 +990,8 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box.bck-b
     padding: 0;
 }
 
-#actividad .bck-box.bck-box-21 {
+#actividad .bck-box.bck-box-21,
+#actividad .bck-box.bck-box-22 {
     border-radius: 0;
     border: 0;
     padding: 20px var(--SlidePadding);
@@ -998,7 +999,23 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box.bck-b
     margin-left: calc(-1 * var(--SlidePadding));
     border: 0;
     text-align: center;
-    background: url(images/textura_papel_2.jpg);
+}
+#actividad .bck-box.bck-box-21 {
+    background-image: url(images/textura_papel_2.jpg);
+}
+#actividad .bck-box.bck-box-22 {
+    background-image: url(images/textura_papel_3.jpg);
+    background-size: contain;
+    background-repeat: round;
+}
+#actividad .bck-box.bck-box-23 {
+    background-color: #FAF9EF;
+    border: 0;
+    border-radius: 0;
+    background-image: -webkit-radial-gradient(#ffffff 33%,transparent 0),-webkit-radial-gradient(#cfcfc3 40%,transparent 0);
+    background-repeat: repeat-x;
+    background-size: 30px 30px;
+    padding-top: 35px;
 }
 
 
@@ -1828,6 +1845,7 @@ and (max-device-width : 480px) {
         background-size: 50px 50px;
         background-position: 0 0, 30px 30px;
         background-repeat: repeat;
+        background-color: #EADFC5;
     }
     .coursetag_bae_majestic #actividad .content .Actividades .header:after {
         background-color: #EADFC5;
