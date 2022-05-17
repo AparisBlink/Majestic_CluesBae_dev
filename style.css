@@ -172,7 +172,10 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     margin: 0;
 }
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .slide-concatenate .header .title {
-    display: none
+    display: none;
+}
+.content_type_clase_Majestic_CluesBae_dev #actividad .content .slide-concatenate .header:after {
+    display: none;
 }
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title h3 {
     position: relative;
