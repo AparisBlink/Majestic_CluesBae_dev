@@ -92,11 +92,17 @@
 				{ name: 'Celda 01', element: 'td', attributes: { 'class': 'bck-td bck-td-1'} },
 				{ name: 'Celda 02', element: 'td', attributes: { 'class': 'bck-td bck-td-2'} },
 
-				{ name: 'Icono Creativity', element: 'span', attributes: { 'class': 'icon icon-creativity' } },
-				{ name: 'Icono Critical Thinking', element: 'span', attributes: { 'class': 'icon icon-criticalThinking' } },
-				{ name: 'Icono Grupo', element: 'span', attributes: { 'class': 'icon icon-grupo' } },
-				{ name: 'Icono Literacy', element: 'span', attributes: { 'class': 'icon icon-literacy' } },
-				{ name: 'Icono Parejas', element: 'span', attributes: { 'class': 'icon icon-parejas' } }
+				{ name: 'Icono Collaboration', element: 'span', attributes: { 'class': 'icon icon_collaboration' } },
+				{ name: 'Icono Communication', element: 'span', attributes: { 'class': 'icon icon_communication' } },
+				{ name: 'Icono Creativity', element: 'span', attributes: { 'class': 'icon icon_creativity' } },
+				{ name: 'Icono Critical Thinking', element: 'span', attributes: { 'class': 'icon icon_critical-thinking' } },
+				{ name: 'Icono Flexibility', element: 'span', attributes: { 'class': 'icon icon_flexibility' } },
+				{ name: 'Icono Initiative', element: 'span', attributes: { 'class': 'icon icon_initiative' } },
+				{ name: 'Icono Leadership', element: 'span', attributes: { 'class': 'icon icon_leadership' } },
+				{ name: 'Icono Literacy', element: 'span', attributes: { 'class': 'icon icon_literacy' } },
+				{ name: 'Icono Parejas', element: 'span', attributes: { 'class': 'icon icon_parejas' } },
+				{ name: 'Icono Productivity', element: 'span', attributes: { 'class': 'icon icon_productivity' } },
+				{ name: 'Icono Team', element: 'span', attributes: { 'class': 'icon icon_team' } },
 			]
 		},
 
