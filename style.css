@@ -1253,7 +1253,7 @@ body:not(.edit) .bck-flipbox-face.back {
     background-color: rgb(var(--colorppal));
     height: 35px !important;
     width: 35px;
-    vertical-align: bottom;
+    vertical-align: middle;
     background-size: 25px;
 }
 #actividad .player.audio:hover {
@@ -1272,8 +1272,9 @@ body:not(.edit) .bck-flipbox-face.back {
     background-position: 50%;
     display: inline-block;
     vertical-align: middle;
-    height: 50px;
-    width: 50px;
+    height: 44px;
+    width: 45px;
+    margin: 0 5px;
 }
 
 .icon_collaboration:before {
@@ -1698,153 +1699,82 @@ and (max-device-width : 480px) {
 /*----*/
 
 /*-- Coursetags --*/
-.coursetag_clues_color2 {
-    --colorppal: 183, 40, 65; /*#00529B*/
+.coursetag_color_clues_1 {
+    --colorppal: 238, 58, 68; /*#EE3A44*/
 }
-.coursetag_clues_color3 {
-    --colorppal: 229, 31, 42; /*#00529B*/
+.coursetag_color_clues_2 {
+    --colorppal: 254, 200, 38; /*#FEC826*/
 }
-.coursetag_clues_color4 {
-    --colorppal: 243, 111, 33; /*#F36F21*/
+.coursetag_color_clues_3 {
+    --colorppal: 237, 128, 39; /*#ED8027*/
 }
-.coursetag_clues_color5 {
-    --colorppal: 0, 133, 63; /*#00853F*/
+.coursetag_color_clues_4 {
+    --colorppal: 73, 185, 98; /*#49B962*/
 }
-.coursetag_clues_color6 {
-    --colorppal: 189, 52, 86; /*#BD3456*/
+.coursetag_color_clues_5 {
+    --colorppal: 14, 131, 149; /*#0E8395*/
 }
-.coursetag_clues_color7 {
-    --colorppal: 0, 173, 238; /*#00ADEE*/
+.coursetag_color_clues_6 {
+    --colorppal: 109, 115, 182; /*#6D73B6*/
 }
-.coursetag_clues_color8 {
-    --colorppal: 0, 171, 77; /*#00AB4D*/
+.coursetag_color_takeuup_6 {
+    --colorppal: 33, 155, 98; /*#219B62*/
 }
-.coursetag_clues_color9 {
-    --colorppal: 254, 184, 17; /*#FEB811*/
-}
-.coursetag_clues_color10 {
-    --colorppal: 115, 101, 167; /*#7365A7*/
-}
-.coursetag_clues_color11 {
-    --colorppal: 205, 74, 139; /*#CD4A8B*/
-}
-.coursetag_clues_color12 {
+.coursetag_color_englishaware_1NE {
     --colorppal: 204, 102, 102; /*#CC6666*/
 }
-.coursetag_clues_color13 {
+.coursetag_color_englishaware_2NE {
     --colorppal: 51, 102, 153; /*#336699*/
 }
-.coursetag_clues_color14 {
+.coursetag_color_englishaware_3NE {
     --colorppal: 153, 204, 51; /*#99CC33*/
 }
-.coursetag_clues_color15 {
+.coursetag_color_englishaware_4NE {
     --colorppal: 51, 153, 153; /*#339999*/
 }
-.coursetag_clues_color16 {
+.coursetag_color_englishaware_5NE {
     --colorppal: 153, 102, 153; /*#996699*/
 }
-.coursetag_clues_color17 {
-    --colorppal: 237, 3, 114; /*#ED0372*/
+.coursetag_color_pasportPlas_1 {
+    --colorppal: 78, 127, 192; /*#4E7FC0*/
 }
-.coursetag_clues_color18 {
-    --colorppal: 233, 68, 60; /*#E9443C*/
+.coursetag_color_pasportPlas_2 {
+    --colorppal: 190, 73, 155; /*#BE499B*/
 }
-.coursetag_clues_color19 {
-    --colorppal: 139, 197, 62; /*#8BC53E*/
+.coursetag_color_pasportPlas_3 {
+    --colorppal: 50, 183, 119; /*#32B777*/
 }
-.coursetag_clues_color20 {
-    --colorppal: 115, 101, 167; /*#7365A7*/
+.coursetag_color_pasportPlas_4 {
+    --colorppal: 166, 90, 163; /*#A65AA3*/
 }
-.coursetag_clues_color21 {
-    --colorppal: 3, 70, 127; /*#03467F*/
+.coursetag_color_pasportPlas_5 {
+    --colorppal: 238, 64, 54; /*#EE4036*/
 }
-.coursetag_clues_color22 {
-    --colorppal: 0, 156, 165; /*#009CA5*/
+.coursetag_color_pasportPlas_6 {
+    --colorppal: 249, 158, 44; /*#F99E2C*/
 }
-.coursetag_clues_color23 {
-    --colorppal: 189, 52, 86; /*#BD3456*/
+.coursetag_color_pasportPlas_7 {
+    --colorppal: 244, 238, 54; /*#F4EE36*/
 }
-.coursetag_clues_color24 {
-    --colorppal: 115, 101, 167; /*#7365A7*/
+.coursetag_color_BAE_1 {
+    --colorppal:183, 40, 65; /*#B72841*/
 }
-.coursetag_clues_color25 {
-    --colorppal: 243, 110, 32; /*#F36E20*/
+.coursetag_color_BAE_2 {
+    --colorppal:0, 82, 155; /*#00529B*/
 }
-.coursetag_clues_color26 {
-    --colorppal: 189, 52, 86; /*#BD3456*/
+.coursetag_color_BAE_3 {
+    --colorppal:111, 43, 143; /*#6F2B8F*/
 }
-.coursetag_clues_color27 {
-    --colorppal: 109, 190, 97; /*#6DBE61*/
+.coursetag_color_BAE_4 {
+    --colorppal:0, 143, 204; /*#008FCC*/
 }
-.coursetag_clues_color28 {
-    --colorppal: 0, 114, 189; /*#0072BD*/
+.coursetag_color_BAE_5 {
+    --colorppal:243, 111, 33; /*#F36F21*/
 }
-.coursetag_clues_color29 {
-    --colorppal: 86, 89, 129; /*#565981*/
+.coursetag_color_BAE_6 {
+    --colorppal:0, 132, 63; /*#00843F*/
 }
-.coursetag_clues_color30 {
-    --colorppal: 37, 146, 179; /*#2592B3*/
-}
-.coursetag_clues_color31 {
-    --colorppal: 115, 101, 166; /*#7365A6*/
-}
-.coursetag_clues_color32 {
-    --colorppal: 242, 183, 58; /*#F2B73A*/
-}
-.coursetag_clues_color33 {
-    --colorppal: 242, 183, 58; /*#53628B*/
-}
-.coursetag_clues_color34 {
-    --colorppal: 208, 100, 115; /*#D06473*/
-}
-.coursetag_clues_color35 {
-    --colorppal: 42, 135, 72; /*#2A8748*/
-}
-.coursetag_clues_color36 {
-    --colorppal: 133, 16, 59; /*#85103B*/
-}
-.coursetag_clues_color37 {
-    --colorppal: 133, 16, 59; /*#7365A7*/
-}
-.coursetag_clues_color38 {
-    --colorppal: 133, 16, 59; /*#0070B2*/
-}
-.coursetag_clues_color39 {
-    --colorppal: 133, 16, 59; /*#B0CF34*/
-}
-.coursetag_clues_color40 {
-    --colorppal: 133, 16, 59; /*#007C37*/
-}
-.coursetag_clues_color41 {
-    --colorppal: 133, 16, 57; /*#851039*/
-}
-.coursetag_clues_color42 {
-    --colorppal: 239, 90, 91; /*#EF5A5B*/
-}
-.coursetag_clues_color43 {
-    --colorppal: 0, 121, 58; /*#00793A*/
-}
-.coursetag_clues_color44 {
-    --colorppal: 1, 46, 79; /*#012E4F*/
-}
-.coursetag_clues_color45 {
-    --colorppal: 0, 141, 120; /*#008D78*/
-}
-.coursetag_clues_color46 {
-    --colorppal: 15, 94, 151; /*#0F5E97*/
-}
-.coursetag_clues_color47 {
-    --colorppal: 74, 86, 117; /*#4A5675*/
-}
-.coursetag_clues_color48 {
-    --colorppal: 210, 113, 159; /*#D2719F*/
-}
-.coursetag_clues_color49 {
-    --colorppal: 112, 179, 227; /*#70B3E3*/
-}
-.coursetag_clues_color50 {
-    --colorppal: 135, 122, 179; /*#877AB3*/
-}
+
 
 
 /*------- coursetag_BAE_majestic --------*/
