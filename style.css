@@ -1241,18 +1241,23 @@ body:not(.edit) .bck-flipbox-face.back {
 #actividad .player.video,
 #help-panel-content .player,
 #remote-alert-modal-rich .player {
-    height: 28px!important;
-    width: 28px;
     display: inline-block;
-    background-color: rgb(var(--colorppal));
-    background-image: url(../../../images/shared/multimedia-icons.png);
     background-repeat: no-repeat;
     background-position-x: -30px;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
     margin: 0 5px;
-    vertical-align: sub;
+    background-image: url(images/icon_audio_interactivo.png);
+    background-position: center center;
+    background-color: rgb(var(--colorppal));
+    height: 35px !important;
+    width: 35px;
+    vertical-align: bottom;
+    background-size: 25px;
+}
+#actividad .player.audio:hover {
+    background-color: rgba(var(--colorppal),0.5);
 }
 
 /*--------- ICONOS ---------*/
@@ -1271,21 +1276,41 @@ body:not(.edit) .bck-flipbox-face.back {
     width: 50px;
 }
 
-.icon .icon-creativity {
-    background-image: url(images/icono_creativity.png);
+.icon_collaboration {
+    background-image: url(images/icon_Collaboration.png);
 }
-.icon .icon-criticalThinking {
-    background-image: url(images/icono_critical_thinking.png);
+.icon_communication {
+    background-image: url(images/icon_Communication.png);
 }
-.icon .icon-grupo {
-    background-image: url(images/icono_grupo.png);
+.icon_creativity {
+    background-image: url(images/icon_Creativity.png);
 }
-.icon .icon-literacy {
-    background-image: url(images/icono_literacy.png);
+.icon_critical-thinking {
+    background-image: url(images/icon_Critical-thinking.png);
 }
-.icon .icon-parejas {
-    background-image: url(images/icono_parejas.png);
+.icon_flexibility {
+    background-image: url(images/icon_Flexibility.png);
 }
+.icon_initiative {
+    background-image: url(images/icon_Initiative.png);
+}
+.icon_leadership {
+    background-image: url(images/icon_Leadership.png);
+}
+.icon_literacy {
+    background-image: url(images/icon_Literacy.png);
+}
+.icon_parejas {
+    background-image: url(images/icon_Parejas.png);
+}
+.icon_productivity {
+    background-image: url(images/icon_Productivity.png);
+}
+.icon_team {
+    background-image: url(images/icon_Team.png);
+}
+
+
 
 
 
@@ -1831,17 +1856,7 @@ and (max-device-width : 480px) {
 .coursetag_bae_majestic.content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title h3 {
     font-family: var(--TitleFontBAE);
 }
-.coursetag_bae_majestic #actividad .player.audio,
- .coursetag_bae_majestic #actividad .player.video,
-  .coursetag_bae_majestic #help-panel-content .player,
-   .coursetag_bae_majestic #remote-alert-modal-rich .player {
-    background-image: url(images/icono_audio.png);
-    background-position: center center;
-    background-color: transparent;
-    height: 35px !important;
-    width: 35px;
-    vertical-align: middle;
-}
+
 /*--- Secciones ---*/
     .coursetag_bae_majestic #actividad .content .Actividades .header {
         background-image: radial-gradient(#ffffff82 10%, transparent 11%), radial-gradient(#ffffff82 10%, transparent 11%);
