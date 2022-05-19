@@ -1276,37 +1276,37 @@ body:not(.edit) .bck-flipbox-face.back {
     width: 50px;
 }
 
-.icon_collaboration {
+.icon_collaboration:before {
     background-image: url(images/icon_Collaboration.png);
 }
-.icon_communication {
+.icon_communication:before {
     background-image: url(images/icon_Communication.png);
 }
-.icon_creativity {
+.icon_creativity:before {
     background-image: url(images/icon_Creativity.png);
 }
-.icon_critical-thinking {
+.icon_critical-thinking:before {
     background-image: url(images/icon_Critical-thinking.png);
 }
-.icon_flexibility {
+.icon_flexibility:before {
     background-image: url(images/icon_Flexibility.png);
 }
-.icon_initiative {
+.icon_initiative:before {
     background-image: url(images/icon_Initiative.png);
 }
-.icon_leadership {
+.icon_leadership:before {
     background-image: url(images/icon_Leadership.png);
 }
-.icon_literacy {
+.icon_literacy:before {
     background-image: url(images/icon_Literacy.png);
 }
-.icon_parejas {
+.icon_parejas:before {
     background-image: url(images/icon_Parejas.png);
 }
-.icon_productivity {
+.icon_productivity:before {
     background-image: url(images/icon_Productivity.png);
 }
-.icon_team {
+.icon_team:before {
     background-image: url(images/icon_Team.png);
 }
 
