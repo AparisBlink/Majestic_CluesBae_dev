@@ -33,6 +33,7 @@
 				{ name: 'E.04', element: 'span', attributes: { 'class': 'bck-enfasis-4'} },
 				{ name: 'E.05', element: 'span', attributes: { 'class': 'bck-enfasis-5'} },
 				{ name: 'E.06', element: 'span', attributes: { 'class': 'bck-enfasis-6'} },
+				{ name: 'E.07 Personaje Audio', element: 'span', attributes: { 'class': 'bck-enfasis-7'} },
 				
 
 				{ name: 'Pa.01 Enunciados', element: 'p', attributes: { 'class': 'bck-p-1'} },
