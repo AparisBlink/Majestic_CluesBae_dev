@@ -1311,6 +1311,9 @@ body:not(.edit) .bck-flipbox-face.back {
 .icon_productivity:before {
     background-image: url(images/icon_Productivity.png);
 }
+.icon_social:before {
+    background-image: url(images/icon_Social.png);
+}
 .icon_team:before {
     background-image: url(images/icon_Team.png);
 }
