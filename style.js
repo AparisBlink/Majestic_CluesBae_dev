@@ -103,6 +103,7 @@
 				{ name: 'Icono Literacy', element: 'span', attributes: { 'class': 'icon icon_literacy' } },
 				{ name: 'Icono Parejas', element: 'span', attributes: { 'class': 'icon icon_parejas' } },
 				{ name: 'Icono Productivity', element: 'span', attributes: { 'class': 'icon icon_productivity' } },
+				{ name: 'Icono Social', element: 'span', attributes: { 'class': 'icon icon_social' } },
 				{ name: 'Icono Team', element: 'span', attributes: { 'class': 'icon icon_team' } },
 			]
 		},
