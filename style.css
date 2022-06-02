@@ -441,6 +441,10 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 .bck-enfasis-6 {
     font-family:'Libre Baskerville', serif;
 }
+.bck-enfasis-7 {
+    color: #706F6F;
+    font-weight: bold;
+}
 
 /*------------ Listas ordenadas -----------*/
 .cke_contents .bck-ol,
@@ -1311,6 +1315,18 @@ body:not(.edit) .bck-flipbox-face.back {
     background-image: url(images/icon_Team.png);
 }
 
+/*---- TABS -----*/
+.bck-tabtitles {
+    background-color: transparent;
+    color: rgb(var(--colorppal));
+    font-weight: bold;
+}
+.bck-tabs-active.bck-tabtitles,
+ .bck-tabtitles:hover {
+    background-color: rgb(var(--colorppal));
+    color: #ffffff;
+    font-weight: bold;
+}
 
 
 
