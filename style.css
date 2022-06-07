@@ -170,9 +170,6 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     padding: 30px var(--SlidePadding);
     margin: 0;
 }
-.content_type_clase_Majestic_CluesBae_dev #actividad .content .slide-concatenate .header .title {
-    display: none;
-}
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .slide-concatenate .header:after {
     display: none;
 }
@@ -208,6 +205,12 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .header.empty:after {
     display: none;
 }
+.content_type_clase_Majestic_CluesBae_dev #actividad .content .slide-concatenate .header.empty {
+    min-height: 0;
+}
+/*---*/
+
+
 .content_type_clase_Majestic_CluesBae_dev #actividad .slide_content_type_1 .pregunta .texto_curso,
 .content_type_clase_Majestic_CluesBae_dev #actividad .texto_curso,
 .html-book {
@@ -816,8 +819,9 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
 #actividad .bck-box.bck-box-9 > .bck-content,
 #actividad .bck-box.bck-box-10 > .bck-content {
     padding: 1.0rem;
-    text-align:center;     
-    min: height 150px;
+    text-align:center;   
+    width: 100%;  
+    min-height: 150px;
     position:relative;   
     border:1px solid #E8E8E8;
     border-top: 0;   
