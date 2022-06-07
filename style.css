@@ -1375,7 +1375,7 @@ body:not(.edit) .bck-flipbox-face.back {
     background-color: rgba(var(--colorppal),0.15);
     border-color: transparent;
 }
-#actividad .workspace.multiple-choice .opcion.respuesta_checked {
+#actividad .workspace.multiple-choice .opcion.respuesta_checked:not(.solucion) {
     border-color: rgb(var(--colorppal));
     background-color: rgb(var(--colorppal));
     color: #ffffff;
@@ -1497,19 +1497,19 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
     outline-color: #ff3626 !important;
 }
 #actividad .markword-solution {
-    outline-color: transparent !important;
+    background-color: #B6ECFF !important;
+    outline-color: #B6ECFF! important;
 }
 /*----*/
 
 
 #actividad .workspace.matching .opciones .opcion:not(.ko):not(.ok),
-#actividad .workspace.multiple-choice .opcion,#actividad .workspace.ordenar .js-rank-item {
+#actividad .workspace.multiple-choice .opcion,
+#actividad .workspace.ordenar .js-rank-item:not(.solucion) {
     border: 2px solid rgb(var(--colorppal));
     background: #fff
 }
-#actividad .workspace.ordenar .js-rank-item:hover {
-    background-color: rgba(var(--colorppal),0.2);
-}
+
 .content .calculo table:not(.rf-tablegrid) td,
  .content .calculo table:not(.rf-tablegrid) th {
     border: 0;
@@ -1554,6 +1554,12 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
 #actividad .workspace.ordenar .js-rank-item .posicion {
     font-weight: bold;
 }
+
+#actividad .workspace.ordenar .js-rank-item.solucion {
+    border-color: #00bdff;
+    background-color: #b6ecff;
+}
+
 /*---*/
 /*--- SEÑALAR RESPUESTA ---*/
 #actividad .workspace.chooseblanks select {
@@ -1570,6 +1576,12 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
 #actividad .workspace.chooseblanks .respuesta_ko {
     border: 0;
     outline-color: #ef0c24 ;
+}
+#actividad .workspace.chooseblanks .solucion {
+    border-bottom: 0;
+    background-color: #b6ecff;
+    opacity: 1;
+    outline-color: #00bdff;
 }
 #actividad .workspace.chooseblanks .inline-answer a {
     vertical-align: baseline;
@@ -1682,6 +1694,14 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
    .shortanswer-container textarea:focus {
     border-color: rgb(var(--colorppal));
 }
+.hint.solucion.decoding {
+    background-color: #B6ECFF;
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+    border-radius: 3px;
+}
+
+
 /*Velocidad de lectura*/
 #actividad .workspace.reading {
     line-height: var(--MainLineHeight);
