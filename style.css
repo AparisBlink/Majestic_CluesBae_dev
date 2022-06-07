@@ -41,6 +41,12 @@ html body:not(.edit),
     font-size: var(--MainText);
     line-height: var(--MainLineHeight);
 }
+.form-control {
+    font-size: var(--MainText);
+    line-height: var(--MainLineHeight);
+    border: 2px solid rgb(var(--TextColor));
+}
+
 /*Padding de la slide*/
 .body_clase:not(.edit):not(.book-summary) #actividad .class_slide {
     padding-left: var(--SlidePadding);
@@ -90,13 +96,7 @@ body:not(.isTablet) #indice .units ul li:not(.disabled) a:hover .title {
 
 
 
-.btn-primary,.btn-primary.disabled {
-    color: #fff;
-    background-color: rgb(var(--colorppal));
-    border-color: transparent;
-    opacity: 1;
-    border-radius: 0
-}
+
 
 body.content_type_clase_Majestic_CluesBae_dev {
     font-size: 1.8rem
@@ -140,6 +140,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 #actividad .slide-wrapper a:not(.audio,.bck-file-attach):hover {
     color: rgb(var(--colorppal));
     background-color: rgba(var(--colorppal),0.2);
+    outline-offset: unset;
 }
 /*----*/
 
@@ -161,9 +162,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     margin-bottom: 20px;
     min-height: 88px;
 }
-.content_type_clase_Majestic_CluesBae_dev #actividad .content .header.empty {
-    display: none;
-}
+
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title {
     margin: 0 0 20px;
     background: rgb(var(--colorppal));
@@ -199,7 +198,16 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     background-position: center;
     background-color: #ffffff;
 }
-
+/*Ajuste cuando ocultamos el título de la slide*/
+.content_type_clase_Majestic_CluesBae_dev #actividad .content .header.empty {
+    min-height: 25px;
+}
+.content_type_clase_Majestic_CluesBae_dev #actividad .content .header.empty .title {
+    display: none;
+}
+.content_type_clase_Majestic_CluesBae_dev #actividad .content .header.empty:after {
+    display: none;
+}
 .content_type_clase_Majestic_CluesBae_dev #actividad .slide_content_type_1 .pregunta .texto_curso,
 .content_type_clase_Majestic_CluesBae_dev #actividad .texto_curso,
 .html-book {
@@ -282,52 +290,77 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     background: #923538
 }
 /*-------------*/
-
-.btn-danger,.btn-danger[disabled] {
-    background-color: rgb(var(--colorppal))
+.btn {
+    font-size: 15px;
 }
-
-.btn-danger,.btn-danger[disabled],.btn-primary[disabled],.btn-primary[disabled]:focus {
-    color: #fff;
-    border-color: transparent;
+.btn-primary,
+.btn-danger {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgb(var(--colorppal));
+    border: 2px solid rgb(var(--colorppal));      
+    background-color: transparent;
 }
 
-.btn-primary[disabled],.btn-primary[disabled]:focus {
-    background-color: #0051a0
-}
-
-.btn-primary {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px
-}
-
-.btn-primary.active,.btn-primary:not([disabled]):active,.btn-primary:not([disabled]):focus,.btn-primary:not([disabled]):hover,.open .dropdown-toggle.btn-primary {
+.btn-primary.active,
+.btn-primary:not([disabled]):active,
+.btn-primary:not([disabled]):focus,
+.btn-primary:not([disabled]):hover,
+.open .dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #be8889;
+    background-color: rgb(var(--colorppal));
     opacity: 1;
-    border-color: transparent
-}
-
-.btn-danger.active,.btn-danger:active,.btn-danger:focus,.btn-danger:hover,.open .dropdown-toggle.btn-danger {
-    color: #fff;
-    background-color: #be8889;
-    border-color: transparent
-}
-
-.btn-next,.btn-next.disabled,.btn-next[disabled],.btn-solution,.btn-solution.disabled,.btn-solution[disabled] {
-    color: #fff;
-    background-color: #0051a0;
     border-color: transparent;
-    border-radius: 5px
 }
 
-.btn-next:active,.btn-next:focus,.btn-next:hover,.btn-solution:active,.btn-solution:focus,.btn-solution:hover,.open .dropdown-toggle.btn-solution {
+.btn-primary[disabled],
+.btn-primary[disabled]:focus,
+.btn-solution[disabled],
+.btn-next.disabled,
+.btn-next[disabled],
+.btn-solution.disabled {
+    background-color: rgb(142, 142, 142);
+    color: #ffffff;
+    border-radius: 5px;
+}
+.btn-danger,
+.btn-danger[disabled] {
+    color: rgb(var(--colorppal)); 
+    background-color: transparent;
+    border: 2px solid rgb(var(--colorppal))
+}
+
+.btn-danger.active,
+.btn-danger:active,
+.btn-danger:focus,
+.btn-danger:hover,
+.open .dropdown-toggle.btn-danger {
     color: #fff;
-    background-color: #5e91c3;
+    background-color: rgb(var(--colorppal));
+    border-color: transparent;
+}
+
+.btn-next,
+.btn-solution {
+    border-width: 2px;
+    background-color: transparent;
+    border-color: #00bdff;
+    border-radius: 5px;
+    color: #00BDFF;
+    font-weight: bold;
+}
+
+.btn-next:not([disabled]):active,
+.btn-next:not([disabled]):focus,
+.btn-next:not([disabled]):hover,
+.btn-solution:not([disabled]):active,
+.btn-solution:not([disabled]):focus,
+.btn-solution:not([disabled]):hover,
+.open .dropdown-toggle.btn-solution {
+    color: #fff;
+    background-color: #00bdff;
     border-color: transparent
 }
 
@@ -1299,7 +1332,7 @@ body:not(.edit) .bck-flipbox-face.back {
 .icon_initiative:before {
     background-image: url(images/icon_Initiative.png);
 }
-.icon_leadership:before {
+.icon_leadership:before {           
     background-image: url(images/icon_Leadership.png);
 }
 .icon_literacy:before {
@@ -1336,11 +1369,27 @@ body:not(.edit) .bck-flipbox-face.back {
 
 /*----------------------------------*/
 /*------- PLANTILLAS -----------------*/
+
+/*--- RESPUESTA MULTIPLE ---*/
+#actividad .workspace.multiple-choice .opcion.respuesta_over {
+    background-color: rgba(var(--colorppal),0.15);
+    border-color: transparent;
+}
+#actividad .workspace.multiple-choice .opcion.respuesta_checked {
+    border-color: rgb(var(--colorppal));
+    background-color: rgb(var(--colorppal));
+    color: #ffffff;
+}
 /*--- RELLENAR ESPACIOS ----*/
 .fillblanks-draggable-wrapper .response {
     cursor: move;
-    border: 0 solid #d8d8d8;
-    background: #f5e6e6
+    border: 0;
+    background: rgba(var(--colorppal),0.15);
+}
+.fillblanks-draggable-wrapper .response.respuesta_over {
+    background-color: rgba(var(--colorppal),0.15);
+    outline: 2px solid rgb(var(--colorppal));
+    color: rgb(var(--colorppal));
 }
 .fillblanks-draggable-wrapper .response .bck-i-fullscreen-wrapper {
     padding: 0
@@ -1436,9 +1485,9 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
 #actividad .markword-solution {
     line-height: var(--MainLineHeight) !important;
     padding: 0 4px !important;
-    border: 0;
+    border: 0 !important;
     outline: 2px solid rgb(35,31, 32) !important;
-    border-radius: 5px !important;
+    border-radius: 3px !important;
     color: rgb(35,31, 32) !important;
 }
 #actividad .markword-correct {
@@ -1458,7 +1507,9 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
     border: 2px solid rgb(var(--colorppal));
     background: #fff
 }
-
+#actividad .workspace.ordenar .js-rank-item:hover {
+    background-color: rgba(var(--colorppal),0.2);
+}
 .content .calculo table:not(.rf-tablegrid) td,
  .content .calculo table:not(.rf-tablegrid) th {
     border: 0;
@@ -1505,17 +1556,36 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
 }
 /*---*/
 /*--- SEÑALAR RESPUESTA ---*/
-#actividad .workspace.chooseblanks .inline-answer a {
-    vertical-align: baseline;
-    border: 2px solid rgb(var(--TextColor));
-    padding: 0px 6px;
-    margin: 0 2px;
-    border-radius: 5px;
-    color: rgb(var(--TextColor));
-    text-decoration: none;
+#actividad .workspace.chooseblanks select {
+    border: 0;
+    outline: 2px solid rgb(var(--TextColor));
+    border-radius: 2px;
 }
+
 #actividad .workspace.chooseblanks .respuesta_ok {
     opacity: 1;
+    border: 0;
+    outline-color: #74d320 ;
+}
+#actividad .workspace.chooseblanks .respuesta_ko {
+    border: 0;
+    outline-color: #ef0c24 ;
+}
+#actividad .workspace.chooseblanks .inline-answer a {
+    vertical-align: baseline;
+    outline: 2px solid rgb(var(--TextColor));
+    padding: 0px 6px;
+    margin: 0 2px;
+    border-radius: 2px;
+    color: rgb(var(--TextColor));
+    text-decoration: none;
+    border: 0;
+}
+#actividad .workspace.chooseblanks .inline-answer a.respuesta_ko {
+    outline-color: #ef0c24 ;
+}
+#actividad .workspace.chooseblanks .inline-answer a.respuesta_ok {
+    outline-color: #3ac62a;
 }
 
 /*----- TEST --------*/
@@ -1605,6 +1675,18 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
 }
 /*----------*/
 
+/*Respuestas cortas */
+.form-control:focus-within,
+ .shortanswer-container .preview:focus .form-control:focus,
+  .shortanswer-container input:focus,
+   .shortanswer-container textarea:focus {
+    border-color: rgb(var(--colorppal));
+}
+/*Velocidad de lectura*/
+#actividad .workspace.reading {
+    line-height: var(--MainLineHeight);
+}
+
 /*---- Crosswords ----*/
 .slide.crosswords-puzzle .enunciado,.slide.crosswords .enunciados .enunciado {
     padding: 0;
@@ -1635,10 +1717,20 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
 }
 
 /*--- Sopa de letras ---*/
+.rf-tgrid {
+    font-family: var(--MainFont);
+    font-size: 1.6rem;
+}
+.rf-wordcontainer {
+    font-family: var(--MainFont);
+}
 .rf-wordcontainer li .index {
     margin-right: 5px;
     font-weight: 700;
     font-size: 1.3rem
+}
+.rf-foundword {
+    font-family: var(--MainFont);
 }
 
 /*--- Crucigrama ---*/
