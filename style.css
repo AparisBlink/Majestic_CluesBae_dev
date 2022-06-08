@@ -1529,14 +1529,16 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
 }
 /*----*/
 
-
+/*-- ORDENAR ---*/
 #actividad .workspace.matching .opciones .opcion:not(.ko):not(.ok),
 #actividad .workspace.multiple-choice .opcion,
 #actividad .workspace.ordenar .js-rank-item:not(.solucion) {
     border: 2px solid rgb(var(--colorppal));
-    background: #fff
+    background-color: #fff;
+    background-position: right center;
 }
 
+/*-- CALCULO --*/
 .content .calculo table:not(.rf-tablegrid) td,
  .content .calculo table:not(.rf-tablegrid) th {
     border: 0;
@@ -1733,6 +1735,12 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
 #actividad .workspace.reading {
     line-height: var(--MainLineHeight);
 }
+
+/*Grabar sonido*/
+/*Reducimos padding del botón para que no se descuadren mucho las listas*/
+.book-content .btnaudiorecorder.btn-primary {
+    padding: 2px 10px;
+  }
 
 /*---- Crosswords ----*/
 .slide.crosswords-puzzle .enunciado,.slide.crosswords .enunciados .enunciado {
