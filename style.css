@@ -97,6 +97,7 @@ body:not(.isTablet) #indice .units ul li:not(.disabled) a:hover .title {
 /*Reglas principales para que lean de las variables*/
 body.content_type_clase_Majestic_CluesBae_dev {
     font-size: var(--MainText);
+    line-height: var(--MainLineHeight);
 }
 #actividad .texto_curso,
  #actividad .texto_curso p {
@@ -1742,6 +1743,10 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
     padding: 2px 10px;
   }
 
+/*Archivo entregable*/
+.deliverablefile .row {
+    margin: 0;
+}
 /*---- Crosswords ----*/
 .slide.crosswords-puzzle .enunciado,.slide.crosswords .enunciados .enunciado {
     padding: 0;
