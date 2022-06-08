@@ -11,51 +11,24 @@
     --TitleFont:'Lexend Deca', sans-serif;
     --TitleFontBAE: 'Arvo', serif;
     --MainText: 1.8rem;
-    --MainMargin: 0 0 2.0rem;
-    --SecondaryText: 1.6rem;
+    --MainMargin: 0 0 2.0rem; /*No aplicable siempre. Alternativa 2.0rem*/
     --MainLineHeight: 2.9rem;
     --SlidePadding: 5.0rem;
 
     --TextColor: 35,31, 32;
     --colorppal: 183, 40, 65;
     --color2BAE: 230, 218, 190;
-
-    --error-color: 244, 6, 6 /*#F40606*/;
-    --ok-color: 0, 134, 56 /*#008638*/;
-    --solution-color: 148, 232, 234 /*94E8EA*/;
 }
 
-/*Definimos estas reglas para que no dependan del font-size: 10px*/
 html body:not(.edit),
  body.edit .navbar.libro {
-    line-height: var(--MainLineHeight);
-    font-size: var(--MainText);
     font-family: var(--MainFont)
 }
-#actividad .texto_curso,
- #actividad .texto_curso p {
-     font-size: var(--MainText);
-     line-height: var(--MainLineHeight) !important;
-}
-#actividad .workspace {
-    font-size: var(--MainText);
-    line-height: var(--MainLineHeight);
-}
-.form-control {
-    font-size: var(--MainText);
-    line-height: var(--MainLineHeight);
-    border: 2px solid rgb(var(--TextColor));
-}
 
-/*Padding de la slide*/
-.body_clase:not(.edit):not(.book-summary) #actividad .class_slide {
-    padding-left: var(--SlidePadding);
-    padding-right: var(--SlidePadding);
-    color: var(--TextColor);
-}
-/*------------------*/
+/*---------------------*/
+/*----- TOC --------*/
+/*---------------------*/
 
-/*TOC*/
 #indice .units ul li {
     background: none;
     -webkit-border-radius: 18px;
@@ -82,7 +55,6 @@ html body:not(.edit),
     line-height: 18px;
     display: block;
 }
-
 #indice .units ul li.active:not(.disabled),
 #indice .units ul li:focus:not(.disabled),
 body:not(.isTablet) #indice .units ul li:hover:not(.disabled) {
@@ -93,43 +65,94 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title,
 body:not(.isTablet) #indice .units ul li:not(.disabled) a:hover .title {
     color: #ffffff;
 }
+/*-----*/
 
+/*---- Navbar inferior----*/
+#bottom-navigator li {
+    width: 15px;
+    height: 15px;
+}
+.content-wrapper {
+    padding-bottom: 75px;
+}
+.navbar-bottom {
+    background: #D1D5DB;
+}
+.logo-publisher {
+    display: none;
+}
+.edit .logo-publisher {
+    display: none
+}
+#bottom-navigator li.active,
+#bottom-navigator li:hover {
+    background: rgb(var(--colorppal));
+}
+/*-------------*/
 
+/*------------------------------------*/
+/*---------- SLIDES HTML ------------*/
+/*------------------------------------*/
 
-
-
+/*Reglas principales para que lean de las variables*/
 body.content_type_clase_Majestic_CluesBae_dev {
-    font-size: 1.8rem
+    font-size: var(--MainText);
+}
+#actividad .texto_curso,
+ #actividad .texto_curso p {
+     font-size: var(--MainText);
+     line-height: var(--MainLineHeight) !important;
+}
+#actividad .workspace {
+    font-size: var(--MainText);
+    line-height: var(--MainLineHeight);
+}
+.form-control {
+    font-size: var(--MainText);
+    line-height: var(--MainLineHeight);
+    border: 2px solid rgb(var(--TextColor));
 }
 
-
-body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
-    padding: 5px
+/*Ajustes generales slide*/
+#actividad .class_slide {
+    padding-top: 0
 }
-
+.body_clase:not(.edit):not(.book-summary) #actividad .class_slide {
+    padding-left: var(--SlidePadding);
+    padding-right: var(--SlidePadding);
+    color: var(--TextColor);
+}
+#actividad .carousel-inner .item-container {
+    max-width: 1100px;
+    margin: 20px auto
+}
+.content_type_clase_Majestic_CluesBae_dev #actividad .slide-concatenate {
+    margin-top: 30px
+}
 .is_app.content_type_clase_Majestic_CluesBae_dev {
     padding-top: 0
 }
-
 .content_type_clase_Majestic_CluesBae_dev #actividad {
     margin-bottom: 0;
     -webkit-transform: none;
     -webkit-transform-style: flat
 }
 
-#actividad .carousel-inner .item-container {
-    max-width: 1100px;
-    margin: 20px auto
-}
-
-.content_type_clase_Majestic_CluesBae_dev #actividad .slide-concatenate {
-    margin-top: 30px
-}
-
 /*---------- GENERALES ---------------*/
+.texto_curso p:last-of-type {
+    margin-bottom: 0
+}
 #actividad .texto_curso p p:last-child {
     margin-bottom: 0;
 }
+
+.content_type_clase_Majestic_CluesBae_dev #actividad .slide_content_type_1 .pregunta .texto_curso,
+.content_type_clase_Majestic_CluesBae_dev #actividad .texto_curso,
+.html-book {
+    font-size: var(--MainText);
+}
+
+
 /*-- ENLACES --*/
 #actividad .slide-wrapper a:not(.audio,.bck-file-attach) {
     text-decoration: underline;
@@ -142,10 +165,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     background-color: rgba(var(--colorppal),0.2);
     outline-offset: unset;
 }
-/*----*/
 
-
-/*----------------------------*/
 /*---- TITULO SLIDE ------------*/
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .header .chapter,
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title img {
@@ -162,16 +182,12 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     margin-bottom: 20px;
     min-height: 88px;
 }
-
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title {
     margin: 0 0 20px;
     background: rgb(var(--colorppal));
     width: 100%;
     padding: 30px var(--SlidePadding);
     margin: 0;
-}
-.content_type_clase_Majestic_CluesBae_dev #actividad .content .slide-concatenate .header:after {
-    display: none;
 }
 .content_type_clase_Majestic_CluesBae_dev #actividad .content .header .title h3 {
     position: relative;
@@ -195,34 +211,32 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
     background-position: center;
     background-color: #ffffff;
 }
-/*Ajuste cuando ocultamos el título de la slide*/
-.content_type_clase_Majestic_CluesBae_dev #actividad .content .header.empty {
-    min-height: 25px;
-}
-.content_type_clase_Majestic_CluesBae_dev #actividad .content .header.empty .title {
+.content_type_clase_Majestic_CluesBae_dev #actividad .content .slide-concatenate .header:after {
     display: none;
 }
-.content_type_clase_Majestic_CluesBae_dev #actividad .content .header.empty:after {
-    display: none;
-}
-.content_type_clase_Majestic_CluesBae_dev #actividad .content .slide-concatenate .header.empty {
-    min-height: 0;
-}
-/*---*/
+    /*-- Quitamos el logo del header en dispositivos pequeños--*/
+    @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px) {
+        .content_type_clase_Majestic_CluesBae_dev #actividad .content .header:after {
+            display: none;
+        }    
+    }
+    /*Ajuste cuando ocultamos el título de la slide*/
+    .content_type_clase_Majestic_CluesBae_dev #actividad .content .header.empty {
+        min-height: 25px;
+    }
+    .content_type_clase_Majestic_CluesBae_dev #actividad .content .header.empty .title {
+        display: none;
+    }
+    .content_type_clase_Majestic_CluesBae_dev #actividad .content .header.empty:after {
+        display: none;
+    }
+    .content_type_clase_Majestic_CluesBae_dev #actividad .content .slide-concatenate .header.empty {
+        min-height: 0;
+    }
+    /*---*/
 
-
-.content_type_clase_Majestic_CluesBae_dev #actividad .slide_content_type_1 .pregunta .texto_curso,
-.content_type_clase_Majestic_CluesBae_dev #actividad .texto_curso,
-.html-book {
-    font-size: var(--MainText);
-}
-.texto_curso p:last-of-type {
-    margin-bottom: 0
-}
-
-#actividad .class_slide {
-    padding-top: 0
-}
 /*----------------------------------*/
 /*Input*/
 .content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container,
@@ -238,9 +252,9 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content img {
 }
 .content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container:focus,
 .content_type_clase_Majestic_CluesBae_dev .slide_main input:focus {
-    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0px 1px 8px rgb(107 107 107 / 78%);
-    -moz-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0px 1px 8px rgb(107 107 107 / 78%);
-    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0px 1px 8px rgb(107 107 107 / 78%);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0 0 0 / 8%), 0px 1px 8px rgba(107 107 107 / 78%);
+    -moz-box-shadow: inset 0 1px 1px rgba(0 0 0 / 8%), 0px 1px 8px rgba(107 107 107 / 78%);
+    box-shadow: inset 0 1px 1px rgba(0 0 0 / 8%), 0px 1px 8px rgba(107 107 107 / 78%);
     border-color: rgb(var(--colorppal));
 }
 .content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container,
@@ -253,12 +267,23 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 }
 .content_type_clase_Majestic_CluesBae_dev .slide_main .fillblanks-draggable .drag-over,
 .content_type_clase_Majestic_CluesBae_dev .slide_main .fillblankimages-draggable .drag-over {
-    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0px 1px 8px rgb(107 107 107 / 78%);
-    -moz-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0px 1px 8px rgb(107 107 107 / 78%);
-    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0px 1px 8px rgb(107 107 107 / 78%);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0 0 0 / 8%), 0px 1px 8px rgba(107 107 107 / 78%);
+    -moz-box-shadow: inset 0 1px 1px rgba(0 0 0 / 8%), 0px 1px 8px rgba(107 107 107 / 78%);
+    box-shadow: inset 0 1px 1px rgba(0 0 0 / 8%), 0px 1px 8px rgba(107 107 107 / 78%);
     border-color: rgb(var(--colorppal));
 }
-/*---------*/
+.form-control:focus-within,
+.shortanswer-container .preview:focus .form-control:focus,
+.shortanswer-container input:focus,
+.shortanswer-container textarea:focus {
+    border-color: rgba(146,53,56,.63);
+    border-width: 2px;
+    outline-width: 0;
+    outline-style: none;
+    -webkit-box-shadow: 0 1px 1px #dbc9c9 inset,0 0 8px #dbc9c9;
+    -moz-box-shadow: 0 1px 1px #dbc9c9 inset,0 0 8px #dbc9c9;
+    box-shadow: inset 0 1px 1px #dbc9c9,0 0 8px #dbc9c9
+}
 
 .content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container.respuesta_ok,
 .content_type_clase_Majestic_CluesBae_dev .slide_main input.respuesta_ok {
@@ -276,129 +301,6 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 .content_type_clase_Majestic_CluesBae_dev .slide_main input.solucion {
     border-color: #00bdff;
     background: #b6ecff
-}
-
-/*-------------------------*/
-/*---- Navbar ----*/
-.navbar-bottom {
-    background: #D1D5DB;
-}
-.logo-publisher {
-    display: none;
-}
-.edit .logo-publisher {
-    display: none
-}
-#bottom-navigator li.active,#bottom-navigator li:hover {
-    background: #923538
-}
-/*-------------*/
-.btn {
-    font-size: 15px;
-}
-.btn-primary,
-.btn-danger {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    font-weight: bold;
-    color: rgb(var(--colorppal));
-    border: 2px solid rgb(var(--colorppal));      
-    background-color: transparent;
-}
-#indice .btn-primary,
-#indice .btn-primary.disabled,
-#indice.btn-primary.disabled:hover,
-#indice .btn-primary.disabled:focus {
-    color: #fff;
-    background-color: rgb(var(--colorppal));
-    line-height: 1;
-}
-
-.btn-primary.active,
-.btn-primary:not([disabled]):active,
-.btn-primary:not([disabled]):focus,
-.btn-primary:not([disabled]):hover,
-.open .dropdown-toggle.btn-primary {
-    color: #fff;
-    background-color: rgb(var(--colorppal));
-    opacity: 1;
-    border-color: transparent;
-}
-
-.btn-primary[disabled],
-.btn-primary[disabled]:focus,
-.btn-solution[disabled],
-.btn-next.disabled,
-.btn-next[disabled],
-.btn-solution.disabled {
-    background-color: rgb(142, 142, 142);
-    color: #ffffff;
-    border-radius: 5px;
-}
-.btn-danger,
-.btn-danger[disabled] {
-    color: rgb(var(--colorppal)); 
-    background-color: transparent;
-    border: 2px solid rgb(var(--colorppal))
-}
-
-.btn-danger.active,
-.btn-danger:active,
-.btn-danger:focus,
-.btn-danger:hover,
-.open .dropdown-toggle.btn-danger {
-    color: #fff;
-    background-color: rgb(var(--colorppal));
-    border-color: transparent;
-}
-
-.btn-next,
-.btn-solution {
-    border-width: 2px;
-    background-color: transparent;
-    border-color: #00bdff;
-    border-radius: 5px;
-    color: #00BDFF;
-    font-weight: bold;
-}
-
-.btn-next:not([disabled]):active,
-.btn-next:not([disabled]):focus,
-.btn-next:not([disabled]):hover,
-.btn-solution:not([disabled]):active,
-.btn-solution:not([disabled]):focus,
-.btn-solution:not([disabled]):hover,
-.open .dropdown-toggle.btn-solution {
-    color: #fff;
-    background-color: #00bdff;
-    border-color: transparent
-}
-
-#actividad .content .review .attemps span {
-    width: 35px;
-    height: 35px;
-    font-weight: 700;
-    color: #fff;
-    background-color: rgb(var(--colorppal));
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    text-align: center;
-    padding: 6px 12px;
-    margin: 0 3px;
-    display: inline-block;
-    line-height: 24px
-}
-
-.form-control:focus-within,.shortanswer-container .preview:focus .form-control:focus,.shortanswer-container input:focus,.shortanswer-container textarea:focus {
-    border-color: rgba(146,53,56,.63);
-    border-width: 2px;
-    outline-width: 0;
-    outline-style: none;
-    -webkit-box-shadow: 0 1px 1px #dbc9c9 inset,0 0 8px #dbc9c9;
-    -moz-box-shadow: 0 1px 1px #dbc9c9 inset,0 0 8px #dbc9c9;
-    box-shadow: inset 0 1px 1px #dbc9c9,0 0 8px #dbc9c9
 }
 
 /*IMAGENES - Quitamos el padding de las imágenes con lupa y reposicionamos el icono de lupa*/
@@ -434,7 +336,6 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 .bck-title-4 {
     font-size: calc(var(--MainText) * 1.11); /*20px*/
 }
-
 .bck-title-5 {
     font-family: var(--TitleFontBAE);
     font-size: calc(var(--MainText) * 2); /*36px*/
@@ -547,7 +448,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     border-radius: 50%;
     background: transparent;
     color: #333;
-    font-size: var(--MainText);
+    font-size: 1em;
     font-weight: 700;
     text-align: center;
     line-height: var(--MainLineHeight);
@@ -678,8 +579,8 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
 .bck-box {
     position: relative;
     border: 2px solid rgb(var(--colorppal));
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
     border-radius: 25px;
     background: #fff;
     padding: 1.5rem;
@@ -867,7 +768,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     background-color: #A2D077;
 }
 #actividad .bck-box.bck-box-10 > .bck-content {   
-    background: #FCDD7B;
+    background: #B0D57A;
     background: -webkit-linear-gradient(-45deg, #B0D57A 81%,#B0D57A 82%,#B0D57A 82%,#ebffcd 100%);
     background: linear-gradient(135deg, #B0D57A 81%,#B0D57A 82%,#B0D57A 82%,#ebffcd 100%);
 }
@@ -1169,6 +1070,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box.bck-b
 .bck-file-attach span {
     display: block;
     margin: var(--MainMargin);
+    max-width: 100%;
 }
 
 
@@ -1240,7 +1142,6 @@ body:not(.edit) .bck-flipbox-face.back {
  .popover-template .popover-title:before {
      display: none;
 }
-
 .info-popover .popover-content,
  .popover-template .popover-content {
     padding: 1.0rem 1.5rem;
@@ -1270,7 +1171,7 @@ body:not(.edit) .bck-flipbox-face.back {
     width: 100%;
     border: solid 2px rgb(35,31, 32);
     font-size: var(--MainText);
-    margin: var(--MainMargin);
+    margin-bottom: 2.0rem;
 }
 #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) td,
 #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) th {
@@ -1400,8 +1301,99 @@ body:not(.edit) .bck-flipbox-face.back {
 
 
 /*----------------------------------*/
+/*---- BOTONERA ------*/
+.btn {
+    font-size: 15px;
+}
+.btn-primary,
+.btn-danger {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgb(var(--colorppal));
+    border: 2px solid rgb(var(--colorppal));      
+    background-color: transparent;
+}
+#indice .btn-primary,
+#indice .btn-primary.disabled,
+#indice.btn-primary.disabled:hover,
+#indice .btn-primary.disabled:focus {
+    color: #fff;
+    background-color: rgb(var(--colorppal));
+    line-height: 1;
+}
+.btn-primary.active,
+.btn-primary:not([disabled]):active,
+.btn-primary:not([disabled]):focus,
+.btn-primary:not([disabled]):hover,
+.open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: rgb(var(--colorppal));
+    opacity: 1;
+    border-color: transparent;
+}
+.btn-primary[disabled],
+.btn-primary[disabled]:focus,
+.btn-solution[disabled],
+.btn-next.disabled,
+.btn-next[disabled],
+.btn-solution.disabled {
+    background-color: rgb(142, 142, 142);
+    color: #ffffff;
+    border-radius: 5px;
+}
+.btn-danger,
+.btn-danger[disabled] {
+    color: rgb(var(--colorppal)); 
+    background-color: transparent;
+    border: 2px solid rgb(var(--colorppal))
+}
+.btn-danger.active,
+.btn-danger:active,
+.btn-danger:focus,
+.btn-danger:hover,
+.open .dropdown-toggle.btn-danger {
+    color: #fff;
+    background-color: rgb(var(--colorppal));
+    border-color: transparent;
+}
+.btn-next,
+.btn-solution {
+    border-width: 2px;
+    background-color: transparent;
+    border-color: #00bdff;
+    border-radius: 5px;
+    color: #00BDFF;
+    font-weight: bold;
+}
+.btn-next:not([disabled]):active,
+.btn-next:not([disabled]):focus,
+.btn-next:not([disabled]):hover,
+.btn-solution:not([disabled]):active,
+.btn-solution:not([disabled]):focus,
+.btn-solution:not([disabled]):hover,
+.open .dropdown-toggle.btn-solution {
+    color: #fff;
+    background-color: #00bdff;
+    border-color: transparent
+}
+#actividad .content .review .attemps span {
+    width: 35px;
+    height: 35px;
+    font-weight: 700;
+    color: #fff;
+    background-color: rgb(var(--colorppal));
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 6px 12px;
+    margin: 0 3px;
+    display: inline-block;
+    line-height: 24px
+}
 /*------- PLANTILLAS -----------------*/
-
 /*--- RESPUESTA MULTIPLE ---*/
 #actividad .workspace.multiple-choice .opcion.respuesta_over {
     background-color: rgba(var(--colorppal),0.15);
@@ -1726,13 +1718,13 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
    .shortanswer-container textarea:focus {
     border-color: rgb(var(--colorppal));
 }
-.hint.solucion.decoding {
-    background-color: #B6ECFF;
-    display: inline-block;
-    padding: 0.1rem 0.5rem;
-    border-radius: 3px;
-}
-
+    /*Solucion en respuestas cortas*/
+    .hint.solucion.decoding {
+        background-color: #B6ECFF;
+        display: inline-block;
+        padding: 0.1rem 0.5rem;
+        border-radius: 3px;
+    }
 
 /*Velocidad de lectura*/
 #actividad .workspace.reading {
@@ -1803,59 +1795,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
 }
 /*-------*/
 
-
-
-
-
-/*------ AJUSTES  GENERALES ------------*/
-/*Quitamos el margin-top de la slide en dispositivos pequeños*/
-@media (max-width: 767px) {
-   #actividad .carousel-inner .item-container {
-        margin-top: 0;
-    }
-}
-@media (max-width: 579px) {
-    #actividad .carousel-inner .item-container {
-        margin-top:0
-    }
-}
-
-/*------ AJUSTES EN EL NAVBAR -------*/
-#bottom-navigator li {
-    width: 15px;
-    height: 15px;
-}
-.content-wrapper {
-    padding-bottom: 75px;
-}
-.navbar-bottom {
-    background: #D1D5DB;
-}
-
-.logo-publisher {
-    display: none;
-}
-.edit .logo-publisher {
-    display: none
-}
-#bottom-navigator li.active,
-#bottom-navigator li:hover {
-    background: rgb(var(--colorppal));
-}
-/*---*/
-/*-- Quitamos el logo del header en dispositivos pequeños--*/
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-    .content_type_clase_Majestic_CluesBae_dev #actividad .content .header:after {
-        display: none;
-    }    
-}
-/*-------*/
-
-/*-*/
-/*----*/
-
+/*--------------------------*/
 /*-- Coursetags --*/
 .coursetag_color_clues_1 {
     --colorppal: 238, 58, 68; /*#EE3A44*/
@@ -1933,8 +1873,6 @@ and (max-device-width : 480px) {
     --colorppal:0, 132, 63; /*#00843F*/
 }
 
-
-
 /*------- coursetag_BAE_majestic --------*/
 .coursetag_bae_majestic  #actividad .content .header .title {
     border-radius: 0px 0px 30px 30px;
@@ -1969,7 +1907,8 @@ and (max-device-width : 480px) {
     
 
 /*------------- Unittags ------------------*/
-/*---- unittag_cuadernotrabajo_majestic -----*/
+/*---- unittag_cuadernotrabajo_majestic 
+Solo afecta al indice                   -----*/
 #indice .units ul li.unittag_cuadernotrabajo_majestic {
     background: rgb(var(--colorppal));
     border: 2px dashed rgb(var(--colorppal));
@@ -1988,6 +1927,7 @@ body:not(.isTablet) #indice .units ul li.unittag_cuadernotrabajo_majestic:not(.d
     color: rgb(var(--colorppal));
 }
 
+/*QUERIES GENERALES DEL ESTILO */
 /* Smartphones (portrait & landscape) */
 @media only screen 
 and (min-device-width : 320px) 
@@ -1995,6 +1935,5 @@ and (max-device-width : 480px) {
     :root {
         --MainText: 1.6rem;
         --MainLineHeight: 2.6rem;
-        --SecondaryText: 1.5rem;
     }
 }
