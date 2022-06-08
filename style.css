@@ -1243,8 +1243,8 @@ body:not(.edit) .bck-flipbox-face.back {
     background-position: 50%;
     display: inline-block;
     vertical-align: middle;
-    height: 44px;
-    width: 45px;
+    height: 34px;
+    width: 35px;
     margin: 0 5px;
 }
 
