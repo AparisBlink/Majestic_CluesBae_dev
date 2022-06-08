@@ -1951,5 +1951,6 @@ and (max-device-width : 480px) {
     :root {
         --MainText: 1.6rem;
         --MainLineHeight: 2.6rem;
+        --SlidePadding: 3.0rem;
     }
 }
