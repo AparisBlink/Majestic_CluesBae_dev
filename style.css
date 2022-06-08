@@ -1039,7 +1039,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     z-index: 2;
     background-color: #ffffff;
 }
-:not(.edit) #actividad .bck-box.bck-box-19 > .bck-content {
+.body_clase:not(.edit) #actividad .bck-box.bck-box-19 > .bck-content {
     border: 0;
     border-radius: 20px;
     width: -moz-fit-content;
