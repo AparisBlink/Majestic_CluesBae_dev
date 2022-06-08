@@ -1039,7 +1039,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     z-index: 2;
     background-color: #ffffff;
 }
-#actividad .bck-box.bck-box-19 > .bck-content {
+:not(.edit) #actividad .bck-box.bck-box-19 > .bck-content {
     border: 0;
     border-radius: 20px;
     width: -moz-fit-content;
@@ -1121,6 +1121,15 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box.bck-b
 }
 .bck-dropdown-content {
     background-color: #e6e6e6;
+}
+/*Desplegables de los feedback*/
+#actividad .bck-dropdown.right-fb-dropdown {
+    color: #85c939;
+    border-color: #85c939;
+}
+#actividad .bck-dropdown.wrong-fb-dropdown {
+    border-color:#fc4237;
+    color: #fc4237;
 }
 /*-------------*/
 /*------ Archivo adjunto -----*/
@@ -1844,11 +1853,6 @@ and (max-device-width : 480px) {
 }
 /*-------*/
 
-/*------ AJUSTES EN EL TOC -----*/
-/*Cambiamos la posición de la imagen del TOC para que se visualice el icono en móvil*/
-#indice .unit-content .header {
-    background-position: bottom;
-}
 /*-*/
 /*----*/
 
