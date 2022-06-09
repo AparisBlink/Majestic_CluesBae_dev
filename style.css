@@ -1368,9 +1368,9 @@ body:not(.edit) .bck-flipbox-face.back {
 .btn-solution {
     border-width: 2px;
     background-color: transparent;
-    border-color: #00bdff;
+    border-color: rgb(var(--colorppal));
     border-radius: 5px;
-    color: #00BDFF;
+    color: rgb(var(--colorppal));
     font-weight: bold;
 }
 .btn-next:not([disabled]):active,
@@ -1381,8 +1381,8 @@ body:not(.edit) .bck-flipbox-face.back {
 .btn-solution:not([disabled]):hover,
 .open .dropdown-toggle.btn-solution {
     color: #fff;
-    background-color: #00bdff;
-    border-color: transparent
+    background-color: rgb(var(--colorppal));
+    border-color: rgb(var(--colorppal));
 }
 #actividad .content .review .attemps span {
     width: 35px;
