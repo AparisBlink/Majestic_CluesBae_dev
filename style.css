@@ -286,6 +286,10 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     box-shadow: inset 0 1px 1px #dbc9c9,0 0 8px #dbc9c9
 }
 
+.texto_curso li input {
+    height: 1.63em;
+}
+
 .content_type_clase_Majestic_CluesBae_dev .slide_main .img-input-container.respuesta_ok,
 .content_type_clase_Majestic_CluesBae_dev .slide_main input.respuesta_ok {
     border-color: #57e900;
@@ -303,6 +307,7 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     border-color: #00bdff;
     background: #b6ecff
 }
+
 
 /*IMAGENES - Quitamos el padding de las imágenes con lupa y reposicionamos el icono de lupa*/
 .bck-i-fullscreen-wrapper {
