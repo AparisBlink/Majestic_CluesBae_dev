@@ -27,12 +27,12 @@
 
 
 
-				{ name: 'E.01', element: 'span', attributes: { 'class': 'bck-enfasis-1'} },
-				{ name: 'E.02', element: 'span', attributes: { 'class': 'bck-enfasis-2'} },
-				{ name: 'E.03', element: 'span', attributes: { 'class': 'bck-enfasis-3'} },
-				{ name: 'E.04', element: 'span', attributes: { 'class': 'bck-enfasis-4'} },
-				{ name: 'E.05', element: 'span', attributes: { 'class': 'bck-enfasis-5'} },
-				{ name: 'E.06', element: 'span', attributes: { 'class': 'bck-enfasis-6'} },
+				{ name: 'E.01 Azul', element: 'span', attributes: { 'class': 'bck-enfasis-1'} },
+				{ name: 'E.02 Sub Azul', element: 'span', attributes: { 'class': 'bck-enfasis-2'} },
+				{ name: 'E.03 Color ppal', element: 'span', attributes: { 'class': 'bck-enfasis-3'} },
+				{ name: 'E.04 Subrayado', element: 'span', attributes: { 'class': 'bck-enfasis-4'} },
+				{ name: 'E.05 Manuscrito', element: 'span', attributes: { 'class': 'bck-enfasis-5'} },
+				{ name: 'E.06 Serif', element: 'span', attributes: { 'class': 'bck-enfasis-6'} },
 				{ name: 'E.07 Personaje Audio', element: 'span', attributes: { 'class': 'bck-enfasis-7'} },
 				
 
@@ -54,7 +54,6 @@
 				{ name: 'Lista ordenada 13', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-13' } },
 				{ name: 'Lista ordenada 14', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-14' } },
 				{ name: 'Lista ordenada 15', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-15' } },
-				{ name: 'Lista ordenada 16', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-16' } },
 
 				{ name: 'Lista desordenada 01', element: 'ul', attributes: { 'class': 'bck-ul bck-ul-1' } },
 				{ name: 'Lista desordenada 02', element: 'ul', attributes: { 'class': 'bck-ul bck-ul-2' } },
@@ -88,7 +87,7 @@
 
 
 				{ name: 'Tabla 01', element: 'table', type: 'bck-stack-class', attributes: { 'class': 'bck-table bck-table-1'} },
-				{ name: 'Table 02', element: 'table', type: 'bck-stack-class', attributes: { 'class': 'bck-table bck-table-2'} },
+				{ name: 'Table 02 Trans', element: 'table', type: 'bck-stack-class', attributes: { 'class': 'bck-table bck-table-2'} },
 
 				{ name: 'Celda 01', element: 'td', attributes: { 'class': 'bck-td bck-td-1'} },
 				{ name: 'Celda 02', element: 'td', attributes: { 'class': 'bck-td bck-td-2'} },
