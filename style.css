@@ -273,6 +273,14 @@ fieldset[disabled] .content_type_clase_Majestic_CluesBae_dev .slide_main input {
     box-shadow: inset 0 1px 1px rgba(0 0 0 / 8%), 0px 1px 8px rgba(107 107 107 / 78%);
     border-color: rgb(var(--colorppal));
 }
+.html-book input:focus,
+ .html-book textarea:focus,
+ .html-book .preview:focus {
+    -webkit-box-shadow: 0 1px 1px #dbc9c9 inset,0 0 8px #dbc9c9;
+    -moz-box-shadow: 0 1px 1px #dbc9c9 inset,0 0 8px #dbc9c9;
+    box-shadow: 0 1px 1px #dbc9c9 inset,0 0 8px #dbc9c9;
+    border-color: rgb(var(--colorppal));
+}
 .form-control:focus-within,
 .shortanswer-container .preview:focus .form-control:focus,
 .shortanswer-container input:focus,
@@ -1885,7 +1893,7 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .fillblanks-dr
     --colorppal:111, 43, 143; /*#6F2B8F*/
 }
 .coursetag_color_BAE_4 {
-    --colorppal:0, 143, 204; /*#008FCC*/
+    --colorppal:0, 143, 204; /*#008FCC*/ 
 }
 .coursetag_color_BAE_5 {
     --colorppal:243, 111, 33; /*#F36F21*/
