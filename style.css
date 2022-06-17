@@ -1072,7 +1072,9 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box.bck-b
     background-size: contain;
     background-repeat: round;
 }
-#actividad .bck-box.bck-box-23 {
+/*CAJAS 23 Y 26*/
+#actividad .bck-box.bck-box-23,
+#actividad .bck-box.bck-box-26 {
     background-color: #FAF9EF;
     border: 0;
     border-radius: 0;
@@ -1081,6 +1083,14 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box.bck-b
     background-size: 30px 30px;
     padding-top: 35px;
 }
+#actividad .bck-box.bck-box-26 p {
+    margin-bottom: var(--MainLineHeight);
+}
+#actividad .bck-box.bck-box-26 > .bck-content {
+    background-image: repeating-linear-gradient(to bottom, transparent, transparent 24px, #60ABDD var(--MainLineHeight));
+}
+/*---*/
+
 #actividad .bck-box.bck-box-25 {
     border: 0;
     padding: 0;
