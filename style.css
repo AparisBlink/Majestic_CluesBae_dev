@@ -1081,6 +1081,33 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box.bck-b
     background-size: 30px 30px;
     padding-top: 35px;
 }
+#actividad .bck-box.bck-box-25 {
+    border: 0;
+    padding: 0;
+}
+#actividad .bck-box.bck-box-25 > .bck-title {
+    background: #009FE3;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    border: 6px solid #ffffff;
+    box-shadow: 0 0 6px #acacac;
+}
+#actividad .bck-box.bck-box-25 > .bck-content {
+    background-color: #D4EDFC;
+    padding: 1.5rem 1.5rem 1.5rem 3.5rem;
+    margin-left: 3rem;
+}
+
+
 
 
 /*------- GRIDS ------------------*/
