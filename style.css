@@ -1498,6 +1498,10 @@ body:not(.edit) .bck-flipbox-face.back {
     color: #ffffff;
 }
 /*--- RELLENAR ESPACIOS ----*/
+/*Desactivado padding en la opcion de Mostrar recuadro de rellenar espacios*/
+.workspace.frame {
+    padding: 0;
+}
 .fillblanks-draggable-wrapper .response {
     cursor: move;
     border: 0;
