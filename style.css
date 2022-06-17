@@ -866,17 +866,24 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box-2 img
     background: linear-gradient(135deg, #B0D57A 81%,#B0D57A 82%,#B0D57A 82%,#ebffcd 100%);
 }
 /*--*/
-#actividad .bck-box.bck-box-11 {
+#actividad .bck-box.bck-box-11,
+#actividad .bck-box.bck-box-24 {
     border: 0;
     border-radius: 0;
     background-color: #CEEBE9;
     padding-bottom: 35px;
     margin-bottom: 25px;
 }
-#actividad .bck-box.bck-box-11 > .bck-title {
+#actividad .bck-box.bck-box-24 {
+    background-color: #ffffff;
+    background-image: url(images/papel_arrugado.jpg);
+}
+#actividad .bck-box.bck-box-11 > .bck-title,
+#actividad .bck-box.bck-box-24 > .bck-title {
     font-weight: bold;
 }
-#actividad .bck-box.bck-box-11:after {
+#actividad .bck-box.bck-box-11:after,
+ #actividad .bck-box.bck-box-24:after {
     content: "";
     position: absolute;
     width: 100%;
