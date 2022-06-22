@@ -1110,6 +1110,8 @@ body.content_type_clase_Majestic_CluesBae_dev #actividad .content .bck-box.bck-b
     z-index: 5;
     border: 6px solid #ffffff;
     box-shadow: 0 0 6px #acacac;
+    margin-left: 8px;
+    margin-top: -15px;
 }
 #actividad .bck-box.bck-box-25 > .bck-content {
     background-color: #D4EDFC;
